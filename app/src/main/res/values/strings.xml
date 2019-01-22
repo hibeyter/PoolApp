@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">PoolApp</string>
+    <string name="GunSec">Gün Seçiniz</string>
+    <string name="SaatSec">Saat Seçiniz</string>
+    <string name="kangrubusec">Kan Grubu Seçiniz</string>
+    <string name="cinsiyetsec">Cinsiyet Seçiniz</string>
+    <string name="tarih">Tarih</string>
+    <string name="ad_soyad">Ad-Soyad</string>
+    <string name="cret">Ücret</string>
+    <string name="isim">Selin Kaplan</string>
+    <string name="ogrenciler">Öğrenci Seçiniz</string>
+    <string name="_30_10_18">| 30.10.18</string>
+    <string name="_22_10_18">| 22.10.18</string>
+    <string name="_15_10_18">| 15.10.18</string>
+    <string name="_08_10_18">| 08.10.18</string>
+    <string name="_01_10_18">| 01.10.18</string>
+    <string name="kaydet">Kaydet</string>
+    <string name="lisans_no">Lisans No :</string>
+    <string name="kat_ld_yar_lar">Katıldığı Yarışlar :</string>
+    <string name="y_zme_bilgisi">Yüzme Bilgisi :</string>
+    <string name="geldi_i_grup">Geldiği Grup :</string>
+    <string name="bacak_uzunlu_u">Bacak Uzunluğu :</string>
+    <string name="omuz_geni_li_i">Omuz Genişliği :</string>
+    <string name="boy">Boy :</string>
+    <string name="kilo">Kilo :</string>
+    <string-array name="gunler">
+        <item>Pazartesi</item>
+        <item>Salı</item>
+        <item>Çarşamba</item>
+        <item>Perşembe</item>
+        <item>Cuma</item>
+        <item>Cumartesi</item>
+        <item>Pazar</item>
+    </string-array>
+    <string-array name="saatler">
+        <item>13.00</item>
+        <item>15.00</item>
+        <item>17.00</item>
+        <item>19.00</item>
+    </string-array>
+    <string-array name="ogrenciler">
+        <item>Alperen Gezgin</item>
+        <item>Selin Kaplan</item>
+        <item>Niyazi Kuşçu</item>
+        <item>Cemre Aydemir</item>
+    </string-array>
+    <string-array name="kangrubu">
+        <item>0 rh +</item>
+        <item>0 rh -</item>
+        <item>A rh +</item>
+        <item>A rh -</item>
+        <item>B rh +</item>
+        <item>B rh -</item>
+        <item>AB rh +</item>
+        <item>AB rh -</item>
+    </string-array>
+    <string-array name="cinsiyet">
+        <item>Kız</item>
+        <item>Erkek</item>
+    </string-array>
+</resources>

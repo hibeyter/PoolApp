@@ -1,0 +1,224 @@
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content">
+
+    <Spinner
+        android:layout_marginTop="10dp"
+        android:id="@+id/gunler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/gunler"
+        android:prompt="@string/GunSec"
+        android:spinnerMode="dialog"
+        android:padding="10dp"/>
+
+    <Spinner
+        android:id="@+id/ogrenciler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/ogrenciler"
+        android:prompt="@string/ogrenciler"
+        android:padding="10dp"
+        android:spinnerMode="dialog" />
+
+    <TableRow>
+        <TextView
+            android:text="@string/ad_soyad"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_column="0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/_01_10_18"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"/>
+        <TextView
+            android:text="@string/_08_10_18"
+            android:textSize="30sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_column="2"/>
+        <TextView
+            android:text="@string/_15_10_18"
+            android:textSize="30sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_column="3"/>
+
+        <TextView
+            android:text="@string/_22_10_18"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_column="4"/>
+        <TextView
+            android:text="@string/_30_10_18"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_column="5"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_column="0"
+            android:text="@string/isim"
+            android:textSize="28sp" />
+        <CheckBox
+            android:layout_column="1"
+            android:checked="false"
+            android:scaleX="1.50"
+            android:scaleY="1.50"
+            android:layout_gravity="center"/>
+        <CheckBox
+            android:layout_column="2"
+            android:checked="false"
+            android:scaleX="1.50"
+            android:scaleY="1.50"
+            android:layout_gravity="center"/>
+        <CheckBox
+            android:layout_column="3"
+            android:checked="false"
+            android:scaleX="1.50"
+            android:scaleY="1.50"
+            android:layout_gravity="center"/>
+        <CheckBox
+            android:layout_column="4"
+            android:checked="false"
+            android:scaleX="1.50"
+            android:scaleY="1.50"
+            android:layout_gravity="center"/>
+        <CheckBox
+            android:layout_column="5"
+            android:checked="false"
+            android:scaleX="1.50"
+            android:scaleY="1.50"
+            android:layout_gravity="center"/>
+    </TableRow>
+
+
+
+    <TableRow>
+
+        <TextView
+            android:layout_column="0"
+            android:text="@string/isim"
+            android:textSize="28sp" />
+        <CheckBox
+            android:layout_column="1"
+            android:scaleX="1.50"
+            android:scaleY="1.50"
+            android:layout_gravity="center"/>
+        <CheckBox
+            android:layout_column="2"
+            android:scaleX="1.50"
+            android:scaleY="1.50"
+            android:layout_gravity="center"/>
+        <CheckBox
+            android:layout_column="3"
+            android:checked="false"
+            android:scaleX="1.50"
+            android:scaleY="1.50"
+            android:layout_gravity="center"/>
+        <CheckBox
+            android:layout_column="4"
+            android:checked="false"
+            android:scaleX="1.50"
+            android:scaleY="1.50"
+            android:layout_gravity="center"/>
+        <CheckBox
+            android:layout_column="5"
+            android:checked="false"
+            android:scaleX="1.50"
+            android:scaleY="1.50"
+            android:layout_gravity="center"/>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_column="0"
+            android:text="@string/isim"
+            android:textSize="28sp" />
+        <CheckBox
+            android:layout_column="1"
+            android:scaleX="1.50"
+            android:scaleY="1.50"
+            android:layout_gravity="center"/>
+        <CheckBox
+            android:layout_column="2"
+            android:scaleX="1.50"
+            android:scaleY="1.50"
+            android:layout_gravity="center"/>
+        <CheckBox
+            android:layout_column="3"
+            android:checked="false"
+            android:scaleX="1.50"
+            android:scaleY="1.50"
+            android:layout_gravity="center"/>
+        <CheckBox
+            android:layout_column="4"
+            android:checked="false"
+            android:scaleX="1.50"
+            android:scaleY="1.50"
+            android:layout_gravity="center"/>
+        <CheckBox
+            android:layout_column="5"
+            android:checked="false"
+            android:scaleX="1.50"
+            android:scaleY="1.50"
+            android:layout_gravity="center"/>
+
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_column="0"
+            android:text="@string/isim"
+            android:textSize="28sp" />
+        <CheckBox
+            android:layout_column="1"
+            android:scaleX="1.50"
+            android:scaleY="1.50"
+            android:layout_gravity="center"/>
+        <CheckBox
+            android:layout_column="2"
+            android:scaleX="1.50"
+            android:scaleY="1.50"
+            android:layout_gravity="center"/>
+        <CheckBox
+            android:layout_column="3"
+            android:checked="false"
+            android:scaleX="1.50"
+            android:scaleY="1.50"
+            android:layout_gravity="center"/>
+        <CheckBox
+            android:layout_column="4"
+            android:checked="false"
+            android:scaleX="1.50"
+            android:scaleY="1.50"
+            android:layout_gravity="center"/>
+        <CheckBox
+            android:layout_column="5"
+            android:checked="false"
+            android:scaleX="1.50"
+            android:scaleY="1.50"
+            android:layout_gravity="center"/>
+
+    </TableRow>
+
+
+</TableLayout>

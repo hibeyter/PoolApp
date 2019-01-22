@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="181dp"
+        app:srcCompat="@android:drawable/gallery_thumb" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Selin Kaplan"
+        android:textSize="60sp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btn_yeni_uye"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="45sp"
+        android:text="Yeni Üye Kayıt" />
+
+    <Button
+        android:id="@+id/btn_yoklama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="45sp"
+        android:text="Yoklama" />
+
+    <Button
+        android:id="@+id/btn_uye_guncelle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="45sp"
+        android:text="Üye Güncelleme" />
+
+    <Button
+        android:id="@+id/btn_uye_sil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="45sp"
+        android:text="Üye Kayıt Silme" />
+    <Button
+        android:id="@+id/btn_ucret"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="45sp"
+        android:text="Ücret Bilgisi" />
+
+    <Button
+        android:id="@+id/btn_antrenor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Antrenör"
+        android:textSize="45sp" />
+
+    <Button
+        android:id="@+id/btn_ayarlar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Ayarlar"
+        android:textSize="45sp" />
+
+</LinearLayout>

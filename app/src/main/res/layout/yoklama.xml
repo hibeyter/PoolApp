@@ -1,0 +1,53 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+
+
+            <Spinner
+                android:layout_marginTop="10dp"
+                android:id="@+id/gunler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/gunler"
+                android:prompt="@string/GunSec"
+                android:spinnerMode="dialog"
+                android:padding="10dp"/>
+
+            <Spinner
+                android:id="@+id/saatler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/saatler"
+                android:prompt="@string/SaatSec"
+                android:padding="10dp"
+                android:spinnerMode="dialog" />
+
+
+            <Button
+                android:id="@+id/yoklamaOK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Kaydet"
+                android:layout_marginTop="10dp"
+                android:textSize="30sp" />
+
+                <ListView
+                    android:id="@+id/listw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </ListView>
+
+
+
+
+
+
+
+
+
+</LinearLayout>
