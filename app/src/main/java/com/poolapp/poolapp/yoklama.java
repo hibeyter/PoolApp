@@ -1,6 +1,7 @@
 package com.poolapp.poolapp;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteStatement;
 import android.os.Bundle;
@@ -47,35 +48,53 @@ public class yoklama extends AppCompatActivity {
 
         @Override
         public void onClick(View v) {
-            try {
-                fragment5.database = openOrCreateDatabase("PoolApp",MODE_PRIVATE,null);
-                Date tarih = new Date();
-                SimpleDateFormat nowt = new SimpleDateFormat("dd.MM.yyyy");
-                String date = nowt.format(tarih);
-                for(int i=0; i<liste.size();i++)
-                {
-                    uyeYoklama now = liste.get(i);
-                    String query = "Insert Into yoklama (tc, name, surname, gun, saat, tarih, varyok) VALUES (?,?,?,?,?,?,?)";
-                    SQLiteStatement statement = fragment5.database.compileStatement(query);
-                    statement.bindString(1,now.getTc());
-                    statement.bindString(2,now.getAd());
-                    statement.bindString(3,now.getSoyad());
-                    statement.bindString(4,gun.getSelectedItem().toString());
-                    statement.bindString(5,saat.getSelectedItem().toString());
-                    statement.bindString(6,date);
-                    String yk = String.valueOf(now.getYoklama());
-                    statement.bindString(7,yk);
-                    statement.execute();
-                }
-                android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(context);
-                builder.setTitle("Yoklama Kayıt Edilmiştir");
-                android.app.AlertDialog alert = builder.create();
-                alert.show();
-            }
-            catch (Exception e){
-                System.out.println("hata lıın yarım");
-                e.printStackTrace();
-            }
+
+            final android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(context);
+            builder.setMessage("Yoklamayı Kaydetmek İstediğinize Emin Misiniz? ")
+                    .setCancelable(false)
+                    .setPositiveButton("Evet", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            //
+                            try {
+                                fragment5.database = openOrCreateDatabase("PoolApp",MODE_PRIVATE,null);
+                                Date tarih = new Date();
+                                SimpleDateFormat nowt = new SimpleDateFormat("dd.MM.yyyy");
+                                String date = nowt.format(tarih);
+                                for(int i=0; i<liste.size();i++)
+                                {
+                                    uyeYoklama now = liste.get(i);
+                                    String query = "Insert Into yoklama (tc, name, surname, gun, saat, tarih, varyok) VALUES (?,?,?,?,?,?,?)";
+                                    SQLiteStatement statement = fragment5.database.compileStatement(query);
+                                    statement.bindString(1,now.getTc());
+                                    statement.bindString(2,now.getAd());
+                                    statement.bindString(3,now.getSoyad());
+                                    statement.bindString(4,gun.getSelectedItem().toString());
+                                    statement.bindString(5,saat.getSelectedItem().toString());
+                                    statement.bindString(6,date);
+                                    String yk = String.valueOf(now.getYoklama());
+                                    statement.bindString(7,yk);
+                                    statement.execute();
+                                }
+
+                            }
+                            catch (Exception e){
+                                e.printStackTrace();
+                            }
+                            //
+                            System.out.println("kaydetti");
+                            dialog.cancel();
+                        }
+                    })
+                    .setNegativeButton("Hayır", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            System.out.println("kaydetmedi");
+                            dialog.cancel();
+                        }
+                    });
+            android.app.AlertDialog alert = builder.create();
+            alert.show();
         }
     }
     class veriCek implements AdapterView.OnItemSelectedListener

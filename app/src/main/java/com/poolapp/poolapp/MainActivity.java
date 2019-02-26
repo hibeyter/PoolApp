@@ -32,11 +32,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button btn_antrenor =  findViewById(R.id.btn_antrenor);
-        btn_antrenor.setOnClickListener(new View.OnClickListener() {
+        Button btn_uyebigisi =  findViewById(R.id.btn_uyebilgisi);
+        btn_uyebigisi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, antrenor.class);
+                Intent intent = new Intent(MainActivity.this, OgrenciList.class);
                 startActivity(intent);
             }
         });

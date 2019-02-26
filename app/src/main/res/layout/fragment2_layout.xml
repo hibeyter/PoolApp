@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.LinearLayoutCompat
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -79,12 +80,14 @@
             android:layout_marginTop="30dp"
             android:text="Yakın Telefon No: "
             android:textSize="30sp" />
+
         <EditText
             android:id="@+id/yakintelno_edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:ems="11"/>
+            android:ems="11"
+            android:inputType="number" />
     </LinearLayout>
 
     <LinearLayout
@@ -98,12 +101,14 @@
             android:layout_marginTop="30dp"
             android:text="Ev Telefon No: "
             android:textSize="30sp" />
+
         <EditText
             android:id="@+id/evtelno_edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:ems="11"/>
+            android:ems="11"
+            android:inputType="number" />
     </LinearLayout>
 
     <LinearLayout

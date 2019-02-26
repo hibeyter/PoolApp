@@ -1,26 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="20dp">
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="181dp"
-        app:srcCompat="@android:drawable/gallery_thumb" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Selin Kaplan"
-        android:textSize="60sp"
-        android:gravity="center"/>
 
     <Button
         android:id="@+id/btn_yeni_uye"
@@ -62,11 +45,11 @@
         android:text="Ücret Bilgisi" />
 
     <Button
-        android:id="@+id/btn_antrenor"
+        android:id="@+id/btn_uyebilgisi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Antrenör"
+        android:text="Üye Bilgisi"
         android:textSize="45sp" />
 
     <Button
