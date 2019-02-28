@@ -25,25 +25,25 @@ public class OgrenciList extends AppCompatActivity {
         int ixad = cursor.getColumnIndex("ad");
         int ixsoyad = cursor.getColumnIndex("soyad");
         int ixtc = cursor.getColumnIndex("tc");
-        cursor.moveToFirst();
+        if (cursor.moveToFirst()) {
 
+            cursor.moveToFirst();
+            for (int i = 0; i < cursor.getCount(); i++) {
+                uyeYoklama yeni = new uyeYoklama(cursor.getString(ixad), cursor.getString(ixsoyad), cursor.getString(ixtc));
+                listVeri.add(yeni);
+                cursor.moveToNext();
+            }
+            CustomAdapter2 adp = new CustomAdapter2(c, listVeri);
+            ogrenci_listview.setAdapter(adp);
 
-        for(int i = 0; i<cursor.getCount();i++)
-        {
-            uyeYoklama yeni = new uyeYoklama(cursor.getString(ixad),cursor.getString(ixsoyad),cursor.getString(ixtc));
-            listVeri.add(yeni);
-            cursor.moveToNext();
+            ogrenci_listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    Intent intent = new Intent(c, UyeBilgisi.class);
+                    intent.putExtra("tc", listVeri.get(position).getTc());
+                    c.startActivity(intent);
+                }
+            });
         }
-       CustomAdapter2 adp = new CustomAdapter2(c,listVeri);
-       ogrenci_listview.setAdapter(adp);
-
-       ogrenci_listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-           @Override
-           public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-               Intent intent = new Intent(c,UyeBilgisi.class);
-               intent.putExtra("tc",listVeri.get(position).getTc());
-               c.startActivity(intent);
-           }
-       });
     }
 }

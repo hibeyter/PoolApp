@@ -21,11 +21,10 @@ public class Fragments_Bilgi extends FragmentPagerAdapter {
            Bilgi_1 bilgi_1 = new Bilgi_1();
            return bilgi_1;
         }
-        else if(i==1){
+        else{
           Bilgi_2 bilgi_2 = new Bilgi_2();
           return bilgi_2;
         }
-        return null;
     }
 
     @Override

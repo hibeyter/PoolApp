@@ -23,6 +23,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_layout);
+        fragment5.database = openOrCreateDatabase("PoolApp",MODE_PRIVATE,null);
+        fragment5.database.execSQL("CREATE TABLE IF NOT EXISTS users(img BLOB, ad VARCHAR, soyad VARCHAR," +
+                "tc VARCHAR, cinsiyet VARCHAR, ameslek VARCHAR, bmeslek VARCHAR, okul VARCHAR, sinif VARCHAR, " +
+                "tel VARCHAR, mail VARCHAR, adres VARCHAR, yakintel VARCHAR, evtel VARCHAR, isadresi VARCHAR," +
+                "kangrb VARCHAR, saglik VARCHAR, ameliyat VARCHAR, ilac VARCHAR, boy VARCHAR, kilo VARCHAR, " +
+                "koluzunlugu VARCHAR, bacak VARCHAR, omuz VARCHAR, gun VARCHAR, saat VARCHAR, yuzme VARCHAR, " +
+                "antrenor VARCHAR, lisansno VARCHAR, yarismalar VARCHAR)");
         Button btn_yeni_uye =  findViewById(R.id.btn_yeni_uye);
         btn_yeni_uye.setOnClickListener(new View.OnClickListener() {
             @Override

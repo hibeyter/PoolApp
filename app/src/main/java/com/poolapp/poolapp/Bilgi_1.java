@@ -46,7 +46,7 @@ public class Bilgi_1 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View vieww = inflater.inflate(R.layout.bilgi_2, container, false);
+        View vieww = inflater.inflate(R.layout.bilgi_1, container, false);
         bilgi_img = vieww.findViewById(R.id.bilgi_img);
         bilgi_ad = vieww.findViewById(R.id.bilgi_ad);
         bilgi_soyad = vieww.findViewById(R.id.bilgi_soyad);
