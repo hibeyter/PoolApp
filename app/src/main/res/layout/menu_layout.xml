@@ -1,63 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="20dp">
+    android:background="@color/background_color">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_launcher"/>
 
     <Button
         android:id="@+id/btn_yeni_uye"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/button_color"
+        android:text="@string/yeni_uye_kayit"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="45sp"
-        android:text="Yeni Üye Kayıt" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogo" />
 
     <Button
         android:id="@+id/btn_yoklama"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
         android:layout_marginTop="20dp"
+        android:background="@color/button_color"
+        android:text="@string/yoklama"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="45sp"
-        android:text="Yoklama" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_yeni_uye" />
 
     <Button
         android:id="@+id/btn_uye_guncelle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
         android:layout_marginTop="20dp"
+        android:background="@color/button_color"
+        android:text="@string/uye_guncelleme"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="45sp"
-        android:text="Üye Güncelleme" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_yoklama" />
 
     <Button
         android:id="@+id/btn_uye_sil"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
         android:layout_marginTop="20dp"
+        android:background="@color/button_color"
+        android:text="@string/kayit_sil"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="45sp"
-        android:text="Üye Kayıt Silme" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_uye_guncelle" />
+
     <Button
         android:id="@+id/btn_ucret"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
         android:layout_marginTop="20dp"
+        android:background="@color/button_color"
+        android:text="@string/aidat"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="45sp"
-        android:text="Ücret Bilgisi" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_uye_sil" />
 
     <Button
         android:id="@+id/btn_uyebilgisi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
         android:layout_marginTop="20dp"
-        android:text="Üye Bilgisi"
-        android:textSize="45sp" />
+        android:background="@color/button_color"
+        android:text="@string/uye_bilgisi"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="45sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ucret" />
 
-    <Button
-        android:id="@+id/btn_ayarlar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Ayarlar"
-        android:textSize="45sp" />
-
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>

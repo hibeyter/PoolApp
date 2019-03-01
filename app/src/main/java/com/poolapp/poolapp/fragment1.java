@@ -40,7 +40,7 @@ public class fragment1 extends Fragment {
         soyad_edit = myView.findViewById(R.id.soyad_edit);
         tc_edit = myView.findViewById(R.id.tc_edit);
         btndate = myView.findViewById(R.id.btn_datepicker);
-        txtDate = myView.findViewById(R.id.date_txt);
+      //  txtDate = myView.findViewById(R.id.date_txt);
         btndate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -1,151 +1,188 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
-        <TextView
-            android:id="@+id/geldigigun_txt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="50dp"
-            android:text="Geldiği Gün : "/>
-        <Spinner
-            android:layout_marginTop="10dp"
-            android:id="@+id/gunler"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:entries="@array/gunler"
-            android:prompt="@string/GunSec"
-            android:spinnerMode="dialog"
-            android:padding="10dp"/>
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
-        <TextView
-            android:id="@+id/geldigisaat_txt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="50dp"
-            android:text="Geldiği Saat : "/>
-        <Spinner
-            android:layout_marginTop="20dp"
-            android:id="@+id/saatler"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:entries="@array/saatler"
-            android:prompt="@string/SaatSec"
-            android:spinnerMode="dialog"
-            android:padding="10dp"/>
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/yuzme_txt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="50dp"
-            android:text="@string/y_zme_bilgisi"/>
-
-        <EditText
-            android:id="@+id/yuzme_edit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:layout_marginTop="20dp"/>
-    </LinearLayout>
-
-
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <TextView
-            android:id="@+id/antrenor_txt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="50dp"
-            android:text="Antrenör : "/>
-        <EditText
-            android:id="@+id/antrenor_edit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:layout_marginTop="20dp"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <TextView
-            android:id="@+id/lisansno_txt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="50dp"
-            android:text="@string/lisans_no"/>
-
-        <EditText
-            android:id="@+id/lisansno_edit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:inputType="number" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <TextView
-            android:id="@+id/yarislar_txt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="50dp"
-            android:text="Katıldığı Yarışlar : "/>
-        <EditText
-            android:id="@+id/yarislar_edit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:layout_marginTop="20dp"/>
-    </LinearLayout>
-
-
-
-    <LinearLayout
+    <TextView
+        android:id="@+id/geldigigun_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal">
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/geldigi_gun"
+        android:textColor="@color/button_color"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/kaydet_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/kaydet"
-            android:textSize="30sp"
-            android:layout_marginTop="50dp"
-            android:layout_marginLeft="225dp"
-            android:layout_marginStart="225dp"/>
-    </LinearLayout>
+    <TextView
+        android:id="@+id/geldigisaat_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/geldigi_saat"
+        android:textColor="@color/button_color"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/geldigigun_txt" />
 
+    <TextView
+        android:id="@+id/yuzme_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/yuzme_bilgisi"
+        android:textColor="@color/button_color"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/geldigisaat_txt" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/antrenor_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/antrenor"
+        android:textColor="@color/button_color"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yuzme_txt" />
+
+    <TextView
+        android:id="@+id/lisansno_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/lisans_no"
+        android:textColor="@color/button_color"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/antrenor_txt" />
+
+    <TextView
+        android:id="@+id/yarislar_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/katildigi_yarismalar"
+        android:textColor="@color/button_color"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lisansno_txt" />
+
+    <Button
+        android:id="@+id/kaydet_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="224dp"
+        android:layout_marginLeft="224dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/button_color"
+        android:text="@string/kaydet"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yarislar_edit" />
+
+    <Spinner
+        android:id="@+id/gunler"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="60dp"
+        android:entries="@array/gunler"
+        android:padding="10dp"
+        android:prompt="@string/GunSec"
+        android:spinnerMode="dialog"
+        app:layout_constraintStart_toEndOf="@+id/geldigigun_txt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/saatler"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:entries="@array/saatler"
+        android:padding="10dp"
+        android:prompt="@string/SaatSec"
+        android:spinnerMode="dialog"
+        app:layout_constraintStart_toEndOf="@+id/geldigisaat_txt"
+        app:layout_constraintTop_toBottomOf="@+id/gunler" />
+
+    <EditText
+        android:id="@+id/yuzme_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/yuzme_txt"
+        app:layout_constraintTop_toBottomOf="@+id/saatler" />
+
+    <EditText
+        android:id="@+id/antrenor_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/antrenor_txt"
+        app:layout_constraintTop_toBottomOf="@+id/yuzme_edit" />
+
+    <EditText
+        android:id="@+id/lisansno_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/lisansno_txt"
+        app:layout_constraintTop_toBottomOf="@+id/antrenor_edit" />
+
+    <EditText
+        android:id="@+id/yarislar_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/yarislar_txt"
+        app:layout_constraintTop_toBottomOf="@+id/lisansno_edit" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaydet_btn"
+        app:srcCompat="@drawable/ic_invert_colors_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+</android.support.constraint.ConstraintLayout>

@@ -14,15 +14,53 @@
     <string name="_15_10_18">| 15.10.18</string>
     <string name="_08_10_18">| 08.10.18</string>
     <string name="_01_10_18">| 01.10.18</string>
-    <string name="kaydet">Kaydet</string>
-    <string name="lisans_no">Lisans No :</string>
     <string name="kat_ld_yar_lar">Katıldığı Yarışlar :</string>
     <string name="y_zme_bilgisi">Yüzme Bilgisi :</string>
     <string name="geldi_i_grup">Geldiği Grup :</string>
     <string name="bacak_uzunlu_u">Bacak Uzunluğu :</string>
     <string name="omuz_geni_li_i">Omuz Genişliği :</string>
+
+    //28.02 ekleme
+    <string name="yeni_uye_kayit">Yeni Üye Kayıt</string>
+    <string name="yoklama">Yoklama</string>
+    <string name="uye_guncelleme">Üye Güncelleme</string>
+    <string name="kayit_sil">Kayit Silme</string>
+    <string name="aidat">Aidat Bilgisi</string>
+    <string name="uye_bilgisi">Üye Bilgisi</string>
+    <string name="ayarlar">Ayarlar</string>
+    <string name="foto_ekle">Fotoğraf Ekle</string>
+    <string name="ad">Ad :</string>
+    <string name="soyad">Soyad :</string>
+    <string name="ad_gir_hint">Adı Giriniz</string>
+    <string name="soyad_gir_hint">Soyadı Giriniz</string>
+    <string name="tc_kimlik">T.C Kimlik No. :</string>
+    <string name="tarih_seciniz">Tarih Seçiniz</string>
+    <string name="telefon_numarası">Telefon Numarası :</string>
+    <string name="mail">Mail :</string>
+    <string name="adres">Adres :</string>
+    <string name="veli_tel_no">Veli Tel. No. :</string>
+    <string name="veli_is_adres">İş Adresi :</string>
+    <string name="kan_grubu">Kan Grubu :</string>
+    <string name="saglik_problemi">Sağlık Problemi(VARSA):</string>
+    <string name="gecirdiği_ameliyat">Geçirdiği Ameliyatlar :</string>
+    <string name="kullandigi_ilaclar">Kullandığı İlaçlar :</string>
     <string name="boy">Boy :</string>
     <string name="kilo">Kilo :</string>
+    <string name="kol_uzunluğu">İki Kol Uzunluğu :</string>
+    <string name="bacak_boyu">Bacak Boyu :</string>
+    <string name="omuz_genisligi">Omuz Genişliği :</string>
+    <string name="geldigi_gun">Geldiği Gün :</string>
+    <string name="geldigi_saat">Geldiği Saat :</string>
+    <string name="yuzme_bilgisi">Yüzme Bilgisi :</string>
+    <string name="antrenor">Antrenör :</string>
+    <string name="lisans_no">Lisans No :</string>
+    <string name="katildigi_yarismalar">Katıldığı Yarışmalar :</string>
+    <string name="kaydet">Kaydet</string>
+    <string name="cinsiyet">Cinsiyet :</string>
+    <string name="anne_meslek">Anne Meslek :</string>
+    <string name="baba_meslek">Baba Meslek :</string>
+    <string name="okul">Okulu :</string>
+    <string name="sinif">Kaçıncı Sınıf :</string>
     <string-array name="gunler">
         <item>Pazartesi</item>
         <item>Salı</item>
