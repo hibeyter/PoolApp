@@ -16,7 +16,8 @@ public class UyeBilgisi extends AppCompatActivity {
     TabLayout tabLayout_bilgi;
     ViewPager viewPager_bilgi;
     Context context = this;
-    List<uyeYoklama> ListSil = new ArrayList<>();
+    public static users u;
+    public static List<uyeYoklama> uye = new ArrayList<>();
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.uye_bilgisi);
@@ -52,7 +53,7 @@ public class UyeBilgisi extends AppCompatActivity {
         int ixboy = cursor.getColumnIndex("boy");
         int ixkilo = cursor.getColumnIndex("kilo");
         int ixkoluzunlugu = cursor.getColumnIndex("koluzunlugu");
-        int izbacak = cursor.getColumnIndex("bacak");
+        int ixbacak = cursor.getColumnIndex("bacak");
         int ixomuz = cursor.getColumnIndex("omuz");
         int ixgun = cursor.getColumnIndex("gun");
         int ixsaat = cursor.getColumnIndex("saat");
@@ -63,13 +64,48 @@ public class UyeBilgisi extends AppCompatActivity {
 
         if (cursor.moveToFirst()) {
 
-            cursor.moveToFirst();
-            for (int i = 0; i < cursor.getCount(); i++) {
-                uyeYoklama yeni = new uyeYoklama(cursor.getString(ixad), cursor.getString(ixsoyad), cursor.getString(ixtc));
-                ListSil.add(yeni);
-                cursor.moveToNext();
+            try{
+                cursor.moveToFirst();
+                u = new users(cursor.getString(ixad),cursor.getString(ixsoyad),cursor.getString(ixtc),cursor.getString(ixcins),cursor.getString(ixameslek),cursor.getString(bmeslek),
+                        cursor.getString(ixokul), cursor.getString(ixsinif), cursor.getString(ixtel), cursor.getString(ixmail),cursor.getString(ixadres),cursor.getString(ixyakintel),
+                        cursor.getString(ixevtel),cursor.getString(ixisadresi),cursor.getString(ixkangrb),cursor.getString(ixsaglik),cursor.getString(ixameliyat),cursor.getString(ixilac),
+                        cursor.getString(ixboy),cursor.getString(ixkilo),cursor.getString(ixkoluzunlugu),cursor.getString(ixbacak),cursor.getString(ixomuz),cursor.getString(ixgun),
+                        cursor.getString(ixsaat),cursor.getString(ixyuzme),cursor.getString(ixantrenor),cursor.getString(ixlisansno),cursor.getString(ixyarismalar));
             }
+            catch (Exception e){
+            e.printStackTrace();
+            }
+            finally {
+                cursor.close();
+            }
+            if (!fragment5.database.isOpen()) {
+                fragment5.database = this.openOrCreateDatabase("PoolApp", MODE_PRIVATE, null);
+            }
+               Cursor cs = fragment5.database.rawQuery("Select name, surname, tarih, varyok from yoklama where tc=? ",new String[]{tc});
+            int ixad2 = cs.getColumnIndex("name");
+            int ixsoyad2 = cs.getColumnIndex("surname");
+            int ixtarih = cs.getColumnIndex("tarih");
+            int ixvaryok = cs.getColumnIndex("varyok");
+            if (cs.moveToFirst()){
+                try{
+                    cs.moveToFirst();
+                    for (int j=0;j<cs.getCount();j++){
+                        uye.add(new uyeYoklama(cs.getString(ixad2),
+                                cs.getString(ixsoyad2),
+                                cs.getString(ixtarih),
+                                cs.getString(ixvaryok)));//verileri nesneye atar ve nesneyi diziye ekler. Bilgi_2 de customadapter 3 tanımla ve onun içine burdaki diziyi ver. Zaten static. sonra listviewin set adapter özelliğine de customadapter3 ü ver. tamamdır
+                        cs.moveToNext();
+                    }
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
+            }
+            cs.close();
+
+
+        }
     }
-    }
+
 }
 

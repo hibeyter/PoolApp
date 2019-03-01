@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:text="Selin Kaplan"
+            android:id="@+id/bilgiadsoyad"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:textSize="30sp" />
+        <TextView
+            android:text="25.02.2019"
+            android:layout_gravity="center"
+            android:layout_column="1"
+            android:id="@+id/bilgitarih"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"/>
+        <TextView
+            android:text="geldi"
+            android:layout_gravity="center"
+            android:layout_column="2"
+            android:id="@+id/bilgivaryok"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"/>
+
+    </GridLayout>
+
+</LinearLayout>

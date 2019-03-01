@@ -70,6 +70,42 @@ public class users {
         this.RACINGS = RACINGS;
     }
 
+    public users(String NAME, String SURNAME, String TC, String SEX, String MOMJOB, String DADJOB, String SCHOOL, String CLASS,
+                 String TEL, String MAIL, String ADRESS, String YAKINTEL, String HOMETEL, String JOBADRESS,
+                 String BLOODTYPE, String HEALTHPROBLEM, String SURGERY, String DRUG, String LENGTH, String WEIGHT,
+                 String ARM, String LEG, String SHOULDER, String SWIMINF, String DAY, String HOUR, String ANTRENOR, String LICENCE,
+                 String RACINGS) {
+        this.NAME = NAME;
+        this.SURNAME = SURNAME;
+        this.TC = TC;
+        this.SEX = SEX;
+        this.MOMJOB = MOMJOB;
+        this.DADJOB = DADJOB;
+        this.SCHOOL = SCHOOL;
+        this.CLASS = CLASS;
+        this.TEL = TEL;
+        this.MAIL = MAIL;
+        this.ADRESS = ADRESS;
+        this.YAKINTEL = YAKINTEL;
+        this.HOMETEL = HOMETEL;
+        this.JOBADRESS = JOBADRESS;
+        this.BLOODTYPE = BLOODTYPE;
+        this.HEALTHPROBLEM = HEALTHPROBLEM;
+        this.SURGERY = SURGERY;
+        this.DRUG = DRUG;
+        this.LENGTH = LENGTH;
+        this.WEIGHT = WEIGHT;
+        this.ARM = ARM;
+        this.LEG = LEG;
+        this.SHOULDER = SHOULDER;
+        this.SWIMINF = SWIMINF;
+        this.DAY = DAY;
+        this.HOUR = HOUR;
+        this.ANTRENOR = ANTRENOR;
+        this.LICENCE = LICENCE;
+        this.RACINGS = RACINGS;
+    }
+
     public byte[] getIMAGE() {
         return IMAGE;
     }

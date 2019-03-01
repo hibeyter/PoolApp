@@ -54,11 +54,11 @@ public class CustomAdapter extends BaseAdapter {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(yoklamatarih.isChecked())
                 {
-                    uye.setYoklama(1);
+                    uye.setYoklama("1");
                 }
                 else
                 {
-                    uye.setYoklama(0);
+                    uye.setYoklama("0");
                 }
             }
         });

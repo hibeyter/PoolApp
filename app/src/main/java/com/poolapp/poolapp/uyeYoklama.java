@@ -5,12 +5,19 @@ public class uyeYoklama {
     String ad;
     String soyad;
     String tarih;
-    int yoklama;
+    String yoklama;
 
     public uyeYoklama(String ad, String soyad, String tc) {
         this.ad = ad;
         this.soyad = soyad;
         this.tc = tc;
+    }
+
+    public uyeYoklama(String ad, String soyad, String tarih, String yoklama) {
+        this.ad = ad;
+        this.soyad = soyad;
+        this.tarih = tarih;
+        this.yoklama = yoklama;
     }
 
     public String getTc() {
@@ -45,11 +52,11 @@ public class uyeYoklama {
         this.tarih = tarih;
     }
 
-    public int getYoklama() {
+    public String getYoklama() {
         return yoklama;
     }
 
-    public void setYoklama(int yoklama) {
+    public void setYoklama(String yoklama) {
         this.yoklama = yoklama;
     }
 }
