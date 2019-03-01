@@ -65,6 +65,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button btn_sil = findViewById(R.id.btn_uye_sil);
+        btn_sil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,UyeSil.class);
+                startActivity(intent);
+            }
+        });
     }
     public  boolean kontrol(){
         int perCamera = ContextCompat.checkSelfPermission(this,Manifest.permission.CAMERA);

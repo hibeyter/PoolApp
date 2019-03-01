@@ -32,6 +32,7 @@
         <activity android:name=".OgrenciList" android:screenOrientation="userPortrait"/>
         <activity android:name=".yoklama" android:screenOrientation="userPortrait" />
         <activity android:name=".ucret" android:screenOrientation="userPortrait" />
+        <activity android:name=".UyeSil" android:screenOrientation="userPortrait" />
     </application>
 
 
