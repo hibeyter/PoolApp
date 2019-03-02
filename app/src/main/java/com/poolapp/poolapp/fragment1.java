@@ -52,7 +52,7 @@ public class fragment1 extends Fragment {
                     @Override
                     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
                     //Dialogdan yapılan seçimin ekrana bastırılması
-                        txtDate.setText(dayOfMonth+"/"+(month + 1)+"/"+year);
+                       // txtDate.setText(dayOfMonth+"/"+(month + 1)+"/"+year);
                     }
                 },yil,ay,gun);
                 datePickerDialog.getDatePicker().setMaxDate(System.currentTimeMillis());
