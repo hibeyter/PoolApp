@@ -87,31 +87,39 @@
         android:id="@+id/evtelno_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginLeft="102dp"
+        android:layout_marginTop="20dp"
         android:text="Ev Telefon No: "
-        android:textSize="30sp" />
+        android:textColor="@color/button_color"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yakintelno_txt" />
 
     <EditText
         android:id="@+id/evtelno_edit"
-        android:layout_width="wrap_content"
+        android:layout_width="210dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
         android:ems="11"
-        android:inputType="number" />
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/evtelno_txt"
+        app:layout_constraintTop_toBottomOf="@+id/yakintelno_edit" />
 
     <TextView
         android:id="@+id/isadresi_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="167dp"
-        android:layout_marginLeft="167dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginLeft="165dp"
         android:layout_marginTop="20dp"
         android:text="@string/veli_is_adres"
         android:textColor="@color/button_color"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/yakintelno_txt" />
+        app:layout_constraintTop_toBottomOf="@+id/evtelno_txt" />
 
     <EditText
         android:id="@+id/adres_edit"
@@ -139,7 +147,7 @@
 
     <EditText
         android:id="@+id/isadresi_edit"
-        android:layout_width="wrap_content"
+        android:layout_width="215dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
@@ -147,7 +155,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintStart_toEndOf="@+id/isadresi_txt"
-        app:layout_constraintTop_toBottomOf="@+id/yakintelno_edit" />
+        app:layout_constraintTop_toBottomOf="@+id/evtelno_edit" />
 
     <ImageView
         android:id="@+id/imageİnvert"
