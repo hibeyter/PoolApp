@@ -14,192 +14,538 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-            <ImageView
-                android:layout_width="180dp"
-                android:layout_height="180dp"
-                app:srcCompat="@android:drawable/gallery_thumb"
-                android:id="@+id/bilgi_img"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="30sp"
-                android:text="null"
-                android:id="@+id/bilgi_ad"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/bilgi_soyad"
-                android:text="null"
-                android:textSize="30sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/bilgi_tc"
-                android:text="null"
-                android:textSize="30sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="null"
-                android:id="@+id/bilgi_tarih"
-                android:textSize="30sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/bilgi_cinsiyet"
-                android:text="null"
-                android:textSize="30sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/bilgi_annemeslek"
-                android:text="null"
-                android:textSize="30sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/bilgi_babameslek"
-                android:text="null"
-                android:textSize="30sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/bilgi_okul"
-                android:text="null"
-                android:textSize="30sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/bilgi_sinif"
-                android:text="null"
-                android:textSize="30sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/bilgi_telno"
-                android:text="null"
-                android:textSize="30sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/bilgi_mail"
-                android:text="null"
-                android:textSize="30sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/bilgi_adres"
-                android:text="null"
-                android:textSize="30sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/bilgi_yakintel"
-                android:text="null"
-                android:textSize="30sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/bilgi_evtel"
-                android:text="null"
-                android:textSize="30sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/bilgi_isadres"
-                android:text="null"
-                android:textSize="30sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/bilgi_kangrubu"
-                android:text="null"
-                android:textSize="30sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/bilgi_saglikproblem"
-                android:text="null"
-                android:textSize="30sp"/>
 
-            <TextView
+            <GridLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/bilgi_ameliyat"
-                android:text="null"
-                android:textSize="30sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/bilgi_ilac"
-                android:text="null"
-                android:textSize="30sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/bilgi_boy"
-                android:text="null"
-                android:textSize="30sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/bilgi_kilo"
-                android:text="null"
-                android:textSize="30sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/bilgi_kol"
-                android:text="null"
-                android:textSize="30sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/bilgi_bacak"
-                android:text="null"
-                android:textSize="30sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/bilgi_omuz"
-                android:text="null"
-                android:textSize="30sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/bilgi_geldigigun"
-                android:text="null"
-                android:textSize="30sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/bilgi_geldigisaat"
-                android:text="null"
-                android:textSize="30sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/bilgi_yuzme"
-                android:text="null"
-                android:textSize="30sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/bilgi_antrenor"
-                android:text="null"
-                android:textSize="30sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/bilgi_lisansno"
-                android:text="null"
-                android:textSize="30sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/bilgi_yarislar"
-                android:text="null"
-                android:textSize="30sp"/>
+                android:layout_height="match_parent"
+                android:columnCount="4"
+                android:rowCount="31">
+
+                <ImageView
+                    android:id="@+id/bilgi_img"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    app:srcCompat="@android:drawable/gallery_thumb" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:text="Ad : "
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/bilgi_ad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:text="null"
+                    android:textSize="30sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:text="Soyad : "
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/bilgi_soyad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:text="null"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:text="Tc : "
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/bilgi_tc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="3"
+                    android:layout_column="1"
+                    android:text="null"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="4"
+                    android:layout_column="0"
+                    android:text="Tarih : "
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/bilgi_tarih"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="4"
+                    android:layout_column="1"
+                    android:text="null"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="5"
+                    android:layout_column="0"
+                    android:text="Cinsiyet : "
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/bilgi_cinsiyet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="5"
+                    android:layout_column="1"
+                    android:text="null"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="6"
+                    android:layout_column="0"
+                    android:text="Anne Meslek : "
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/bilgi_annemeslek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="6"
+                    android:layout_column="1"
+                    android:text="null"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="7"
+                    android:layout_column="0"
+                    android:text="Baba Meslek : "
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/bilgi_babameslek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="7"
+                    android:layout_column="1"
+                    android:text="null"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="8"
+                    android:layout_column="0"
+                    android:text="Okul : "
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/bilgi_okul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="8"
+                    android:layout_column="1"
+                    android:text="null"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="9"
+                    android:layout_column="0"
+                    android:text="Sınıf : "
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/bilgi_sinif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="9"
+                    android:layout_column="1"
+                    android:text="null"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="10"
+                    android:layout_column="0"
+                    android:text="Telefon Numarası : "
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/bilgi_telno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="10"
+                    android:layout_column="1"
+                    android:text="null"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="11"
+                    android:layout_column="0"
+                    android:text="Mail Adresi : "
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/bilgi_mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="11"
+                    android:layout_column="1"
+                    android:text="null"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="12"
+                    android:layout_column="0"
+                    android:text="Ev Adresi : "
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/bilgi_adres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="12"
+                    android:layout_column="1"
+                    android:text="null"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="13"
+                    android:layout_column="0"
+                    android:text="Yakın Telefon No : "
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/bilgi_yakintel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="13"
+                    android:layout_column="1"
+                    android:text="null"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="14"
+                    android:layout_column="0"
+                    android:text="Ev Telefon No : "
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/bilgi_evtel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="14"
+                    android:layout_column="1"
+                    android:text="null"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="15"
+                    android:layout_column="0"
+                    android:text="İş Adresi : "
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/bilgi_isadres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="15"
+                    android:layout_column="1"
+                    android:text="null"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="16"
+                    android:layout_column="0"
+                    android:text="Kan Grubu : "
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/bilgi_kangrubu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="16"
+                    android:layout_column="1"
+                    android:text="null"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="17"
+                    android:layout_column="0"
+                    android:text="Sağlık Problemi : "
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/bilgi_saglikproblem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="17"
+                    android:layout_column="1"
+                    android:text="null"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="18"
+                    android:layout_column="0"
+                    android:text="Ameliyat : "
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/bilgi_ameliyat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="18"
+                    android:layout_column="1"
+                    android:text="null"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="19"
+                    android:layout_column="0"
+                    android:text=" Kullandığı İlaç : "
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/bilgi_ilac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="19"
+                    android:layout_column="1"
+                    android:text="null"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="20"
+                    android:layout_column="0"
+                    android:text="Boy : "
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/bilgi_boy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="20"
+                    android:layout_column="1"
+                    android:text="null"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="21"
+                    android:layout_column="0"
+                    android:text="Kilo : "
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/bilgi_kilo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="21"
+                    android:layout_column="1"
+                    android:text="null"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="22"
+                    android:layout_column="0"
+                    android:text="Kol Boyu : "
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/bilgi_kol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="22"
+                    android:layout_column="1"
+                    android:text="null"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="23"
+                    android:layout_column="0"
+                    android:text="Bacak Boyu : "
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/bilgi_bacak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="23"
+                    android:layout_column="1"
+                    android:text="null"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="24"
+                    android:layout_column="0"
+                    android:text="Omuz Boyu : "
+                    android:textSize="35sp" />
+
+
+                <TextView
+                    android:id="@+id/bilgi_omuz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="24"
+                    android:layout_column="1"
+                    android:text="null"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="25"
+                    android:layout_column="0"
+                    android:text="Geldiği Gün : "
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/bilgi_geldigigun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="25"
+                    android:layout_column="1"
+                    android:text="null"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="26"
+                    android:layout_column="0"
+                    android:text="Geldiği Saat : "
+                    android:textSize="35sp" />
+
+
+                <TextView
+                    android:id="@+id/bilgi_geldigisaat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="26"
+                    android:layout_column="1"
+                    android:text="null"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="27"
+                    android:layout_column="0"
+                    android:text="Yüzme Bilgisi : "
+                    android:textSize="35sp" />
+
+
+                <TextView
+                    android:id="@+id/bilgi_yuzme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="27"
+                    android:layout_column="1"
+                    android:text="null"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="28"
+                    android:layout_column="0"
+                    android:text="Antrenör : "
+                    android:textSize="35sp" />
+
+
+                <TextView
+                    android:id="@+id/bilgi_antrenor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="28"
+                    android:layout_column="1"
+                    android:text="null"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="29"
+                    android:layout_column="0"
+                    android:text="Lisans No : "
+                    android:textSize="35sp" />
+
+
+                <TextView
+                    android:id="@+id/bilgi_lisansno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="29"
+                    android:layout_column="1"
+                    android:text="null"
+                    android:textSize="30sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="30"
+                    android:layout_column="0"
+                    android:text="Katıldığı Yarışlar : "
+                    android:textSize="35sp"/>
+
+                <TextView
+                    android:id="@+id/bilgi_yarislar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="30"
+                    android:layout_column="1"
+                    android:text="null"
+                    android:textSize="30sp" />
+
+            </GridLayout>
+
         </LinearLayout>
     </ScrollView>
 
