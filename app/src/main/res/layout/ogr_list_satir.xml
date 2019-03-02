@@ -11,5 +11,5 @@
             android:id="@+id/satir_ad"
             android:layout_gravity="center_horizontal"
             android:textSize="30sp"
-            android:text="selin "/>
+            android:text="selin  "/>
 </LinearLayout>

@@ -110,6 +110,7 @@
         android:layout_marginTop="5dp"
         android:ems="10"
         android:inputType="number"
+        android:maxLength="11"
         app:layout_constraintStart_toEndOf="@+id/tc_text"
         app:layout_constraintTop_toBottomOf="@+id/soyad_edit" />
 
