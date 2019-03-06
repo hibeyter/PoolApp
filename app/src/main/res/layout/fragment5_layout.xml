@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="113dp"
         android:layout_marginLeft="113dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:text="@string/yuzme_bilgisi"
         android:textColor="@color/toolbar_color"
         android:textSize="30sp"
@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="178dp"
         android:layout_marginLeft="178dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:text="@string/antrenor"
         android:textColor="@color/toolbar_color"
         android:textSize="30sp"
@@ -68,7 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="170dp"
         android:layout_marginLeft="170dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:text="@string/lisans_no"
         android:textColor="@color/toolbar_color"
         android:textSize="30sp"
@@ -82,7 +82,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:text="@string/katildigi_yarismalar"
         android:textColor="@color/toolbar_color"
         android:textSize="30sp"
@@ -145,6 +145,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:textColor="@color/toolbar_color"
+        android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/yuzme_txt"
         app:layout_constraintTop_toBottomOf="@+id/saatler" />
 
@@ -158,6 +159,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:textColor="@color/toolbar_color"
+        android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/antrenor_txt"
         app:layout_constraintTop_toBottomOf="@+id/yuzme_edit" />
 
@@ -171,6 +173,7 @@
         android:ems="10"
         android:inputType="number"
         android:textColor="@color/toolbar_color"
+        android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/lisansno_txt"
         app:layout_constraintTop_toBottomOf="@+id/antrenor_edit" />
 
@@ -184,6 +187,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:textColor="@color/toolbar_color"
+        android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/yarislar_txt"
         app:layout_constraintTop_toBottomOf="@+id/lisansno_edit" />
 
