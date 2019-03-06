@@ -3,7 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:background="@color/design_color">
 
     <GridLayout
         android:layout_width="match_parent"
@@ -22,21 +23,24 @@
             android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:layout_column="0"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:textColor="@color/toolbar_color"/>
         <TextView
             android:text="25.02.2019"
             android:layout_gravity="center"
             android:layout_column="1"
             android:id="@+id/bilgitarih"
             android:layout_height="wrap_content"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:textColor="@color/toolbar_color"/>
         <TextView
             android:text="geldi"
             android:layout_gravity="center"
             android:layout_column="2"
             android:id="@+id/bilgivaryok"
             android:layout_height="wrap_content"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:textColor="@color/toolbar_color"/>
 
     </GridLayout>
 

@@ -61,6 +61,7 @@
     <string name="baba_meslek">Baba Meslek :</string>
     <string name="okul">Okulu :</string>
     <string name="sinif">Kaçıncı Sınıf :</string>
+    <string name="text_merhaba">Merhaba, Hoşgeldiniz :)</string>
     <string-array name="gunler">
         <item>Pazartesi</item>
         <item>Salı</item>

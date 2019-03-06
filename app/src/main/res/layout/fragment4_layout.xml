@@ -10,12 +10,13 @@
         android:id="@+id/boy_txt"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="180dp"
-        android:layout_marginLeft="180dp"
+        android:layout_marginStart="187dp"
+        android:layout_marginLeft="187dp"
         android:layout_marginTop="80dp"
         android:text="@string/boy"
-        android:textColor="@color/button_color"
+        android:textColor="@color/toolbar_color"
         android:textSize="30sp"
+        android:typeface="serif"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,12 +24,13 @@
         android:id="@+id/kilo_txt"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="180dp"
-        android:layout_marginLeft="180dp"
+        android:layout_marginStart="187dp"
+        android:layout_marginLeft="187dp"
         android:layout_marginTop="20dp"
         android:text="@string/kilo"
-        android:textColor="@color/button_color"
+        android:textColor="@color/toolbar_color"
         android:textSize="30sp"
+        android:typeface="serif"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/boy_txt" />
 
@@ -36,12 +38,13 @@
         android:id="@+id/kolboyu_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
         android:layout_marginTop="20dp"
         android:text="@string/kol_uzunluğu"
-        android:textColor="@color/button_color"
+        android:textColor="@color/toolbar_color"
         android:textSize="30sp"
+        android:typeface="serif"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/kilo_txt" />
 
@@ -53,8 +56,9 @@
         android:layout_marginLeft="80dp"
         android:layout_marginTop="20dp"
         android:text="@string/bacak_boyu"
-        android:textColor="@color/button_color"
+        android:textColor="@color/toolbar_color"
         android:textSize="30sp"
+        android:typeface="serif"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/kolboyu_txt" />
 
@@ -66,8 +70,9 @@
         android:layout_marginLeft="35dp"
         android:layout_marginTop="20dp"
         android:text="@string/omuz_genisligi"
-        android:textColor="@color/button_color"
+        android:textColor="@color/toolbar_color"
         android:textSize="30sp"
+        android:typeface="serif"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bacak_txt" />
 
@@ -80,6 +85,7 @@
         android:layout_marginTop="80dp"
         android:ems="10"
         android:inputType="number"
+        android:textColor="@color/toolbar_color"
         app:layout_constraintStart_toEndOf="@+id/boy_txt"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -92,6 +98,7 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="number"
+        android:textColor="@color/toolbar_color"
         app:layout_constraintStart_toEndOf="@+id/kilo_txt"
         app:layout_constraintTop_toBottomOf="@+id/boy_edit" />
 
@@ -104,6 +111,7 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="number"
+        android:textColor="@color/toolbar_color"
         app:layout_constraintStart_toEndOf="@+id/kolboyu_txt"
         app:layout_constraintTop_toBottomOf="@+id/kilo_edit" />
 
@@ -116,6 +124,7 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="number"
+        android:textColor="@color/toolbar_color"
         app:layout_constraintStart_toEndOf="@+id/bacak_txt"
         app:layout_constraintTop_toBottomOf="@+id/kolboyu_edit" />
 
@@ -128,6 +137,7 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="number"
+        android:textColor="@color/toolbar_color"
         app:layout_constraintStart_toEndOf="@+id/omuz_txt"
         app:layout_constraintTop_toBottomOf="@+id/bacak_edit" />
 
@@ -135,9 +145,12 @@
         android:id="@+id/imageView3"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginStart="250dp"
-        android:layout_marginLeft="250dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginLeft="240dp"
         android:layout_marginTop="140dp"
+        android:layout_marginEnd="241dp"
+        android:layout_marginRight="241dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/omuz_edit"
         app:srcCompat="@drawable/ic_invert_colors_black_24dp"

@@ -15,8 +15,9 @@
         android:layout_marginLeft="140dp"
         android:layout_marginTop="70dp"
         android:text="@string/cinsiyet"
-        android:textColor="@color/button_color"
+        android:textColor="@color/toolbar_color"
         android:textSize="30sp"
+        android:typeface="serif"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,8 +29,9 @@
         android:layout_marginLeft="74dp"
         android:layout_marginTop="20dp"
         android:text="@string/anne_meslek"
-        android:textColor="@color/button_color"
+        android:textColor="@color/toolbar_color"
         android:textSize="30sp"
+        android:typeface="serif"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cinsiyet_txt" />
 
@@ -41,8 +43,9 @@
         android:layout_marginLeft="74dp"
         android:layout_marginTop="20dp"
         android:text="@string/baba_meslek"
-        android:textColor="@color/button_color"
+        android:textColor="@color/toolbar_color"
         android:textSize="30sp"
+        android:typeface="serif"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/annemeslek_txt" />
 
@@ -54,8 +57,9 @@
         android:layout_marginLeft="168dp"
         android:layout_marginTop="20dp"
         android:text="@string/okul"
-        android:textColor="@color/button_color"
+        android:textColor="@color/toolbar_color"
         android:textSize="30sp"
+        android:typeface="serif"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/babameslek_txt" />
 
@@ -67,18 +71,20 @@
         android:layout_marginLeft="80dp"
         android:layout_marginTop="20dp"
         android:text="@string/sinif"
-        android:textColor="@color/button_color"
+        android:textColor="@color/toolbar_color"
         android:textSize="30sp"
+        android:typeface="serif"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/okul_txt" />
 
     <Spinner
         android:id="@+id/cinsiyet"
-        android:layout_width="wrap_content"
+        android:layout_width="102dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="70dp"
+        android:background="@color/toolbar_color"
         android:entries="@array/cinsiyet"
         android:padding="10dp"
         android:prompt="@string/cinsiyetsec"
@@ -95,6 +101,7 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="@color/toolbar_color"
         app:layout_constraintStart_toEndOf="@+id/annemeslek_txt"
         app:layout_constraintTop_toBottomOf="@+id/cinsiyet" />
 
@@ -107,6 +114,7 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="@color/toolbar_color"
         app:layout_constraintStart_toEndOf="@+id/babameslek_txt"
         app:layout_constraintTop_toBottomOf="@+id/annemeslek_edit" />
 
@@ -119,6 +127,7 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="@color/toolbar_color"
         app:layout_constraintStart_toEndOf="@+id/okul_txt"
         app:layout_constraintTop_toBottomOf="@+id/babameslek_edit" />
 
@@ -131,6 +140,7 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="@color/toolbar_color"
         app:layout_constraintStart_toEndOf="@+id/sinif_txt"
         app:layout_constraintTop_toBottomOf="@+id/okul_edit" />
 
@@ -141,6 +151,9 @@
         android:layout_marginStart="240dp"
         android:layout_marginLeft="240dp"
         android:layout_marginTop="150dp"
+        android:layout_marginEnd="241dp"
+        android:layout_marginRight="241dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sinif_edit"
         app:srcCompat="@drawable/ic_invert_colors_black_24dp"

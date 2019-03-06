@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/design_color">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,7 +36,8 @@
                     android:layout_row="1"
                     android:layout_column="0"
                     android:text="Ad : "
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_ad"
@@ -44,7 +46,8 @@
                     android:layout_row="1"
                     android:layout_column="1"
                     android:text="null"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:textColor="@color/toolbar_color"/>
 
 
                 <TextView
@@ -53,7 +56,8 @@
                     android:layout_row="2"
                     android:layout_column="0"
                     android:text="Soyad : "
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_soyad"
@@ -62,7 +66,8 @@
                     android:layout_row="2"
                     android:layout_column="1"
                     android:text="null"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -70,7 +75,8 @@
                     android:layout_row="3"
                     android:layout_column="0"
                     android:text="Tc : "
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_tc"
@@ -79,7 +85,8 @@
                     android:layout_row="3"
                     android:layout_column="1"
                     android:text="null"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -87,7 +94,8 @@
                     android:layout_row="4"
                     android:layout_column="0"
                     android:text="Tarih : "
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_tarih"
@@ -96,7 +104,8 @@
                     android:layout_row="4"
                     android:layout_column="1"
                     android:text="null"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -104,7 +113,8 @@
                     android:layout_row="5"
                     android:layout_column="0"
                     android:text="Cinsiyet : "
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_cinsiyet"
@@ -113,7 +123,8 @@
                     android:layout_row="5"
                     android:layout_column="1"
                     android:text="null"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -121,7 +132,8 @@
                     android:layout_row="6"
                     android:layout_column="0"
                     android:text="Anne Meslek : "
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_annemeslek"
@@ -130,7 +142,8 @@
                     android:layout_row="6"
                     android:layout_column="1"
                     android:text="null"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -138,7 +151,8 @@
                     android:layout_row="7"
                     android:layout_column="0"
                     android:text="Baba Meslek : "
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_babameslek"
@@ -147,7 +161,8 @@
                     android:layout_row="7"
                     android:layout_column="1"
                     android:text="null"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -155,7 +170,8 @@
                     android:layout_row="8"
                     android:layout_column="0"
                     android:text="Okul : "
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_okul"
@@ -164,7 +180,8 @@
                     android:layout_row="8"
                     android:layout_column="1"
                     android:text="null"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -172,7 +189,8 @@
                     android:layout_row="9"
                     android:layout_column="0"
                     android:text="Sınıf : "
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_sinif"
@@ -181,6 +199,7 @@
                     android:layout_row="9"
                     android:layout_column="1"
                     android:text="null"
+                    android:textColor="@color/toolbar_color"
                     android:textSize="30sp" />
 
                 <TextView
@@ -189,7 +208,8 @@
                     android:layout_row="10"
                     android:layout_column="0"
                     android:text="Telefon Numarası : "
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_telno"
@@ -198,7 +218,8 @@
                     android:layout_row="10"
                     android:layout_column="1"
                     android:text="null"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -206,7 +227,8 @@
                     android:layout_row="11"
                     android:layout_column="0"
                     android:text="Mail Adresi : "
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_mail"
@@ -215,7 +237,8 @@
                     android:layout_row="11"
                     android:layout_column="1"
                     android:text="null"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -223,7 +246,8 @@
                     android:layout_row="12"
                     android:layout_column="0"
                     android:text="Ev Adresi : "
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_adres"
@@ -232,7 +256,8 @@
                     android:layout_row="12"
                     android:layout_column="1"
                     android:text="null"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -240,7 +265,8 @@
                     android:layout_row="13"
                     android:layout_column="0"
                     android:text="Yakın Telefon No : "
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_yakintel"
@@ -249,7 +275,8 @@
                     android:layout_row="13"
                     android:layout_column="1"
                     android:text="null"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -257,7 +284,8 @@
                     android:layout_row="14"
                     android:layout_column="0"
                     android:text="Ev Telefon No : "
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_evtel"
@@ -266,7 +294,8 @@
                     android:layout_row="14"
                     android:layout_column="1"
                     android:text="null"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -274,7 +303,8 @@
                     android:layout_row="15"
                     android:layout_column="0"
                     android:text="İş Adresi : "
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_isadres"
@@ -283,7 +313,8 @@
                     android:layout_row="15"
                     android:layout_column="1"
                     android:text="null"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -291,7 +322,8 @@
                     android:layout_row="16"
                     android:layout_column="0"
                     android:text="Kan Grubu : "
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_kangrubu"
@@ -300,7 +332,8 @@
                     android:layout_row="16"
                     android:layout_column="1"
                     android:text="null"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -308,7 +341,8 @@
                     android:layout_row="17"
                     android:layout_column="0"
                     android:text="Sağlık Problemi : "
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_saglikproblem"
@@ -317,7 +351,8 @@
                     android:layout_row="17"
                     android:layout_column="1"
                     android:text="null"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -325,7 +360,8 @@
                     android:layout_row="18"
                     android:layout_column="0"
                     android:text="Ameliyat : "
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_ameliyat"
@@ -334,7 +370,8 @@
                     android:layout_row="18"
                     android:layout_column="1"
                     android:text="null"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -342,7 +379,8 @@
                     android:layout_row="19"
                     android:layout_column="0"
                     android:text=" Kullandığı İlaç : "
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_ilac"
@@ -351,7 +389,8 @@
                     android:layout_row="19"
                     android:layout_column="1"
                     android:text="null"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -359,7 +398,8 @@
                     android:layout_row="20"
                     android:layout_column="0"
                     android:text="Boy : "
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_boy"
@@ -368,7 +408,8 @@
                     android:layout_row="20"
                     android:layout_column="1"
                     android:text="null"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -376,7 +417,8 @@
                     android:layout_row="21"
                     android:layout_column="0"
                     android:text="Kilo : "
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_kilo"
@@ -385,7 +427,8 @@
                     android:layout_row="21"
                     android:layout_column="1"
                     android:text="null"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -393,7 +436,8 @@
                     android:layout_row="22"
                     android:layout_column="0"
                     android:text="Kol Boyu : "
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_kol"
@@ -402,7 +446,8 @@
                     android:layout_row="22"
                     android:layout_column="1"
                     android:text="null"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -410,7 +455,8 @@
                     android:layout_row="23"
                     android:layout_column="0"
                     android:text="Bacak Boyu : "
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_bacak"
@@ -419,7 +465,8 @@
                     android:layout_row="23"
                     android:layout_column="1"
                     android:text="null"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -427,7 +474,8 @@
                     android:layout_row="24"
                     android:layout_column="0"
                     android:text="Omuz Boyu : "
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
 
                 <TextView
@@ -437,7 +485,8 @@
                     android:layout_row="24"
                     android:layout_column="1"
                     android:text="null"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -445,7 +494,8 @@
                     android:layout_row="25"
                     android:layout_column="0"
                     android:text="Geldiği Gün : "
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_geldigigun"
@@ -454,7 +504,8 @@
                     android:layout_row="25"
                     android:layout_column="1"
                     android:text="null"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -462,7 +513,8 @@
                     android:layout_row="26"
                     android:layout_column="0"
                     android:text="Geldiği Saat : "
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
 
                 <TextView
@@ -472,7 +524,8 @@
                     android:layout_row="26"
                     android:layout_column="1"
                     android:text="null"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -480,7 +533,8 @@
                     android:layout_row="27"
                     android:layout_column="0"
                     android:text="Yüzme Bilgisi : "
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
 
                 <TextView
@@ -490,7 +544,8 @@
                     android:layout_row="27"
                     android:layout_column="1"
                     android:text="null"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -498,7 +553,8 @@
                     android:layout_row="28"
                     android:layout_column="0"
                     android:text="Antrenör : "
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
 
                 <TextView
@@ -508,7 +564,8 @@
                     android:layout_row="28"
                     android:layout_column="1"
                     android:text="null"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -516,7 +573,8 @@
                     android:layout_row="29"
                     android:layout_column="0"
                     android:text="Lisans No : "
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
 
                 <TextView
@@ -526,14 +584,17 @@
                     android:layout_row="29"
                     android:layout_column="1"
                     android:text="null"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:textColor="@color/toolbar_color"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_row="30"
                     android:layout_column="0"
                     android:text="Katıldığı Yarışlar : "
-                    android:textSize="35sp"/>
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_yarislar"
@@ -542,7 +603,8 @@
                     android:layout_row="30"
                     android:layout_column="1"
                     android:text="null"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:textColor="@color/toolbar_color"/>
 
             </GridLayout>
 
