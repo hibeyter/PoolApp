@@ -29,6 +29,23 @@ public class fragment2 extends Fragment {
         yakintelno_edit = view.findViewById(R.id.yakintelno_edit);
         evtelno_edit = view.findViewById(R.id.evtelno_edit);
         isadresi_edit = view.findViewById(R.id.isadresi_edit);
+        Telcikma();
         return view;
+    }
+    public void Telcikma(){
+        final Kontrol kontrol = new Kontrol();
+        telno_edit.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (!hasFocus) {
+                    String x = String.valueOf(telno_edit.getText());
+                    if (!kontrol.Telkontrol(x)){
+                        telno_edit.setError("Hatalı Tel");
+                    }
+                }else{
+
+                }
+            }
+        });
     }
 }

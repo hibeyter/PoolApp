@@ -10,12 +10,13 @@
         android:id="@+id/geldigigun_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginLeft="138dp"
         android:layout_marginTop="60dp"
         android:text="@string/geldigi_gun"
-        android:textColor="@color/button_color"
+        android:textColor="@color/toolbar_color"
         android:textSize="30sp"
+        android:typeface="serif"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,12 +24,13 @@
         android:id="@+id/geldigisaat_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="92dp"
-        android:layout_marginLeft="92dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
         android:layout_marginTop="20dp"
         android:text="@string/geldigi_saat"
-        android:textColor="@color/button_color"
+        android:textColor="@color/toolbar_color"
         android:textSize="30sp"
+        android:typeface="serif"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/geldigigun_txt" />
 
@@ -36,12 +38,13 @@
         android:id="@+id/yuzme_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
-        android:layout_marginLeft="72dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginLeft="113dp"
+        android:layout_marginTop="40dp"
         android:text="@string/yuzme_bilgisi"
-        android:textColor="@color/button_color"
+        android:textColor="@color/toolbar_color"
         android:textSize="30sp"
+        android:typeface="serif"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/geldigisaat_txt" />
 
@@ -49,12 +52,13 @@
         android:id="@+id/antrenor_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="136dp"
-        android:layout_marginLeft="136dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="178dp"
+        android:layout_marginLeft="178dp"
+        android:layout_marginTop="40dp"
         android:text="@string/antrenor"
-        android:textColor="@color/button_color"
+        android:textColor="@color/toolbar_color"
         android:textSize="30sp"
+        android:typeface="serif"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/yuzme_txt" />
 
@@ -62,12 +66,13 @@
         android:id="@+id/lisansno_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginLeft="120dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="40dp"
         android:text="@string/lisans_no"
-        android:textColor="@color/button_color"
+        android:textColor="@color/toolbar_color"
         android:textSize="30sp"
+        android:typeface="serif"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/antrenor_txt" />
 
@@ -77,10 +82,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:text="@string/katildigi_yarismalar"
-        android:textColor="@color/button_color"
+        android:textColor="@color/toolbar_color"
         android:textSize="30sp"
+        android:typeface="serif"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lisansno_txt" />
 
@@ -91,10 +97,11 @@
         android:layout_marginStart="224dp"
         android:layout_marginLeft="224dp"
         android:layout_marginTop="60dp"
-        android:background="@color/button_color"
+        android:background="@drawable/buttonshape"
         android:text="@string/kaydet"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/toolbar_color"
         android:textSize="30sp"
+        android:typeface="serif"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/yarislar_edit" />
 
@@ -105,6 +112,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="60dp"
+        android:background="@color/toolbar_color"
         android:entries="@array/gunler"
         android:padding="10dp"
         android:prompt="@string/GunSec"
@@ -119,6 +127,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="20dp"
+        android:background="@color/toolbar_color"
         android:entries="@array/saatler"
         android:padding="10dp"
         android:prompt="@string/SaatSec"
@@ -135,6 +144,8 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="@color/toolbar_color"
+        android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/yuzme_txt"
         app:layout_constraintTop_toBottomOf="@+id/saatler" />
 
@@ -147,6 +158,8 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="@color/toolbar_color"
+        android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/antrenor_txt"
         app:layout_constraintTop_toBottomOf="@+id/yuzme_edit" />
 
@@ -159,6 +172,8 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="number"
+        android:textColor="@color/toolbar_color"
+        android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/lisansno_txt"
         app:layout_constraintTop_toBottomOf="@+id/antrenor_edit" />
 
@@ -171,6 +186,8 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="@color/toolbar_color"
+        android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/yarislar_txt"
         app:layout_constraintTop_toBottomOf="@+id/lisansno_edit" />
 
@@ -181,6 +198,9 @@
         android:layout_marginStart="240dp"
         android:layout_marginLeft="240dp"
         android:layout_marginTop="70dp"
+        android:layout_marginEnd="241dp"
+        android:layout_marginRight="241dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/kaydet_btn"
         app:srcCompat="@drawable/ic_invert_colors_black_24dp"

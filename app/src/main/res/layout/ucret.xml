@@ -3,13 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/design_color">
 
     <Spinner
         android:id="@+id/gun"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:background="@color/toolbar_color"
         android:entries="@array/gunler"
         android:padding="10dp"
         android:prompt="@string/GunSec"
@@ -19,6 +21,7 @@
         android:id="@+id/saat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/toolbar_color"
         android:entries="@array/saatler"
         android:padding="10dp"
         android:prompt="@string/SaatSec"
@@ -29,6 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
+        android:background="@color/toolbar_color"
         android:prompt="@string/ogrenciler"
         android:spinnerMode="dialog">
 
@@ -37,7 +41,8 @@
    <LinearLayout
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:orientation="horizontal">
+       android:orientation="horizontal"
+       android:background="@color/design_color">
 
        <ImageView
            android:id="@+id/foto"
@@ -53,27 +58,32 @@
            android:layout_height="wrap_content"
            android:textSize="25sp"
            android:layout_gravity="center_vertical"
-           android:layout_marginLeft="25dp"/>
+           android:layout_marginLeft="25dp"
+           android:textColor="@color/toolbar_color"
+           android:background="@color/design_color"/>
    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="@color/design_color">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:text="Ücret"
-            android:textSize="25sp" />
+            android:textColor="@color/toolbar_color"
+            android:textSize="30sp" />
 
         <EditText
             android:id="@+id/ucret"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
-            android:textSize="25sp" />
+            android:textColor="@color/toolbar_color"
+            android:textSize="30sp" />
     </LinearLayout>
 
     <Button
@@ -81,12 +91,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Kaydet"
-        android:textSize="25sp" />
+        android:textSize="30sp"
+        android:background="@drawable/buttonshape"
+        android:textColor="@color/toolbar_color"/>
 
     <ListView
         android:id="@+id/ls"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:textColor="@color/toolbar_color">
 
     </ListView>
 

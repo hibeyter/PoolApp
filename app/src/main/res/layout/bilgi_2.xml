@@ -3,12 +3,17 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_gravity="center"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/design_color">
+
     <ListView
+        android:id="@+id/ls2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="vertical"
-        android:id="@+id/ls2">
+        android:background="@color/background_color"
+        android:cacheColorHint="@color/toolbar_color"
+        android:entries="@color/toolbar_color"
+        android:scrollbars="vertical">
 
     </ListView>
 

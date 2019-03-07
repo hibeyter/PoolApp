@@ -3,7 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android" 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:background="@color/design_color">
 
     <GridLayout
         android:layout_width="match_parent"
@@ -18,16 +19,19 @@
             android:layout_height="wrap_content"
             android:layout_column="0"
             android:textSize="40sp"
+            android:textColor="@color/toolbar_color"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="10dp"/>
+
         <CheckBox
-            android:layout_gravity="center"
-            android:layout_column="1"
             android:id="@+id/yoklama_tarih"
             android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
             android:scaleX="1.75"
             android:scaleY="1.75"
-            android:layout_marginTop="5dp" />
+            android:textColor="@color/toolbar_color" />
 
     </GridLayout>
 

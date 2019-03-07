@@ -27,4 +27,7 @@ public class fragment3 extends Fragment {
         ilac_edit = view.findViewById(R.id.ilac_edit);
         return view;
     }
+
+
+
 }

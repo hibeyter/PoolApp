@@ -10,12 +10,13 @@
         android:id="@+id/telno_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="60dp"
         android:text="@string/telefon_numarası"
-        android:textColor="@color/button_color"
+        android:textColor="@color/toolbar_color"
         android:textSize="30sp"
+        android:typeface="serif"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,6 +29,8 @@
         android:layout_marginTop="60dp"
         android:ems="10"
         android:inputType="number"
+        android:textColor="@color/toolbar_color"
+        android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/telno_txt"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -37,10 +40,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="220dp"
         android:layout_marginLeft="220dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:text="@string/mail"
-        android:textColor="@color/button_color"
+        android:textColor="@color/toolbar_color"
         android:textSize="30sp"
+        android:typeface="serif"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/telno_txt" />
 
@@ -53,7 +57,8 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:textSize="18sp"
+        android:textColor="@color/toolbar_color"
+        android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/mail_txt"
         app:layout_constraintTop_toBottomOf="@+id/telno_edit" />
 
@@ -63,10 +68,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="200dp"
         android:layout_marginLeft="200dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:text="@string/adres"
-        android:textColor="@color/button_color"
+        android:textColor="@color/toolbar_color"
         android:textSize="30sp"
+        android:typeface="serif"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mail_txt" />
 
@@ -74,12 +80,13 @@
         android:id="@+id/yakintelno_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginLeft="120dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="40dp"
         android:text="@string/veli_tel_no"
-        android:textColor="@color/button_color"
+        android:textColor="@color/toolbar_color"
         android:textSize="30sp"
+        android:typeface="serif"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/adres_txt" />
 
@@ -87,12 +94,13 @@
         android:id="@+id/evtelno_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="102dp"
-        android:layout_marginLeft="102dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="40dp"
         android:text="Ev Telefon No: "
-        android:textColor="@color/button_color"
+        android:textColor="@color/toolbar_color"
         android:textSize="30sp"
+        android:typeface="serif"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/yakintelno_txt" />
 
@@ -105,6 +113,8 @@
         android:layout_marginTop="20dp"
         android:ems="11"
         android:inputType="number"
+        android:textColor="@color/toolbar_color"
+        android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/evtelno_txt"
         app:layout_constraintTop_toBottomOf="@+id/yakintelno_edit" />
 
@@ -114,10 +124,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="165dp"
         android:layout_marginLeft="165dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:text="@string/veli_is_adres"
-        android:textColor="@color/button_color"
+        android:textColor="@color/toolbar_color"
         android:textSize="30sp"
+        android:typeface="serif"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/evtelno_txt" />
 
@@ -130,6 +141,8 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="@color/toolbar_color"
+        android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/adres_txt"
         app:layout_constraintTop_toBottomOf="@+id/mail_edit" />
 
@@ -142,6 +155,8 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="number"
+        android:textColor="@color/toolbar_color"
+        android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/yakintelno_txt"
         app:layout_constraintTop_toBottomOf="@+id/adres_edit" />
 
@@ -154,6 +169,8 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="@color/toolbar_color"
+        android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/isadresi_txt"
         app:layout_constraintTop_toBottomOf="@+id/evtelno_edit" />
 
@@ -161,9 +178,12 @@
         android:id="@+id/imageİnvert"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginStart="275dp"
-        android:layout_marginLeft="275dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="241dp"
+        android:layout_marginRight="241dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/isadresi_edit"
         app:srcCompat="@drawable/ic_invert_colors_black_24dp"
