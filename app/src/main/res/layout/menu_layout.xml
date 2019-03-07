@@ -9,12 +9,9 @@
         android:id="@+id/imageViewLogo"
         android:layout_width="fill_parent"
         android:layout_height="200dp"
-        android:layout_marginTop="100dp"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
-        android:src="@drawable/d0bc5683_c48f_40f9_bab0_73f693e03034"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:src="@drawable/d0bc5683_c48f_40f9_bab0_73f693e03034"/>
 
     <Button
         android:id="@+id/btn_yeni_uye"

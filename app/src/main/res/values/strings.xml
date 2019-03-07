@@ -6,7 +6,6 @@
     <string name="cinsiyetsec">Cinsiyet Seçiniz</string>
     <string name="tarih">Tarih</string>
     <string name="ad_soyad">Ad-Soyad</string>
-    <string name="cret">Ücret</string>
     <string name="isim">Selin Kaplan</string>
     <string name="ogrenciler">Öğrenci Seçiniz</string>
     <string name="_30_10_18">| 30.10.18</string>
@@ -62,6 +61,7 @@
     <string name="okul">Okulu :</string>
     <string name="sinif">Kaçıncı Sınıf :</string>
     <string name="text_merhaba">Merhaba, Hoşgeldiniz :)</string>
+    <string name="ucret">Ücret :</string>
     <string-array name="gunler">
         <item>Pazartesi</item>
         <item>Salı</item>
