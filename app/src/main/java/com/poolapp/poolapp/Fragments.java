@@ -7,7 +7,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 public class Fragments extends FragmentPagerAdapter {
-    private String[] table = new String[]{"Kişisel Bilgiler","Kişisel Bilgiler 2 ","İletişim Bilgileri","Sağlık Bilgileri","Vücut Bilgileri","Yüzme Bilgileri"};
+    private String[] table = new String[]{"Kişisel Bilgiler","Kişisel Bilgiler","İletişim Bilgileri","Sağlık Bilgileri","Vücut Bilgileri","Yüzme Bilgileri"};
     Context context;
 
     Fragments(FragmentManager fm, Context context){

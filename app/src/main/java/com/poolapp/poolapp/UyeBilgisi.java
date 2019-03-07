@@ -8,7 +8,6 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,7 +16,7 @@ public class UyeBilgisi extends AppCompatActivity {
     ViewPager viewPager_bilgi;
     Context context = this;
     public static users u;
-    public static List<uyeYoklama> uye = new ArrayList<>();
+    public static List<uyeYoklama> uye;
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.uye_bilgisi);
@@ -29,12 +28,13 @@ public class UyeBilgisi extends AppCompatActivity {
         Toast.makeText(context,tc,Toast.LENGTH_LONG).show();
 
         fragment5.database = this.openOrCreateDatabase("PoolApp",MODE_PRIVATE,null);
-        Cursor cursor = fragment5.database.rawQuery("Select ad, soyad, tc,cinsiyet,ameslek,bmeslek, okul, sinif, tel,\" +\n" +
+        Cursor cursor = fragment5.database.rawQuery("Select ad, soyad,date ,tc,cinsiyet,ameslek,bmeslek, okul, sinif, tel,\" +\n" +
                 "\"mail, adres, yakintel, evtel, isadresi, kangrb, saglik, ameliyat, ilac, boy, kilo, koluzunlugu,\" +\n" +
                 "\"bacak, omuz, gun, saat, yuzme, antrenor, lisansno, yarismalar from users where tc = ?",new String[]{tc});
         int ixad = cursor.getColumnIndex("ad");
         int ixsoyad = cursor.getColumnIndex("soyad");
         int ixtc = cursor.getColumnIndex("tc");
+        int ixdate = cursor.getColumnIndex("date");
         int ixcins = cursor.getColumnIndex("cinsiyet");
         int ixameslek = cursor.getColumnIndex("ameslek");
         int bmeslek = cursor.getColumnIndex("bmeslek");
@@ -66,7 +66,7 @@ public class UyeBilgisi extends AppCompatActivity {
 
             try{
                 cursor.moveToFirst();
-                u = new users(cursor.getString(ixad),cursor.getString(ixsoyad),cursor.getString(ixtc),cursor.getString(ixcins),cursor.getString(ixameslek),cursor.getString(bmeslek),
+                u = new users(cursor.getString(ixad),cursor.getString(ixsoyad),cursor.getString(ixtc),cursor.getString(ixdate),cursor.getString(ixcins),cursor.getString(ixameslek),cursor.getString(bmeslek),
                         cursor.getString(ixokul), cursor.getString(ixsinif), cursor.getString(ixtel), cursor.getString(ixmail),cursor.getString(ixadres),cursor.getString(ixyakintel),
                         cursor.getString(ixevtel),cursor.getString(ixisadresi),cursor.getString(ixkangrb),cursor.getString(ixsaglik),cursor.getString(ixameliyat),cursor.getString(ixilac),
                         cursor.getString(ixboy),cursor.getString(ixkilo),cursor.getString(ixkoluzunlugu),cursor.getString(ixbacak),cursor.getString(ixomuz),cursor.getString(ixgun),
@@ -90,6 +90,7 @@ public class UyeBilgisi extends AppCompatActivity {
                 try{
                     cs.moveToFirst();
                     for (int j=0;j<cs.getCount();j++){
+                        uye = new ArrayList<>();
                         uye.add(new uyeYoklama(cs.getString(ixad2),
                                 cs.getString(ixsoyad2),
                                 cs.getString(ixtarih),

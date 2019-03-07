@@ -27,7 +27,7 @@ public class fragment1 extends Fragment {
     private static final int IMAGE_PICK = 1;
     private static final int IMAGE_CAPTURE = 2;
     Button btndate;
-    TextView txtDate;
+    static TextView txtDate;
     static EditText ad_edit;
     static EditText soyad_edit;
     static EditText tc_edit;
@@ -40,7 +40,7 @@ public class fragment1 extends Fragment {
         soyad_edit = myView.findViewById(R.id.soyad_edit);
         tc_edit = myView.findViewById(R.id.tc_edit);
         btndate = myView.findViewById(R.id.btn_datepicker);
-      //  txtDate = myView.findViewById(R.id.date_txt);
+        txtDate = myView.findViewById(R.id.date_txt);
         btndate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,7 +52,7 @@ public class fragment1 extends Fragment {
                     @Override
                     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
                     //Dialogdan yapılan seçimin ekrana bastırılması
-                       // txtDate.setText(dayOfMonth+"/"+(month + 1)+"/"+year);
+                       txtDate.setText(dayOfMonth+"/"+(month + 1)+"/"+year);
                     }
                 },yil,ay,gun);
                 datePickerDialog.getDatePicker().setMaxDate(System.currentTimeMillis());

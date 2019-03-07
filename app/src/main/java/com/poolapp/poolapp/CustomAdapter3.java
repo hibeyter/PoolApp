@@ -21,7 +21,7 @@ public class CustomAdapter3 extends BaseAdapter {
     }
     @Override
     public int getCount() {
-        return bilgiyoklama.size();
+        return 0;
     }
 
     @Override
@@ -42,7 +42,7 @@ public class CustomAdapter3 extends BaseAdapter {
         final TextView bilgitarih = bilgiList.findViewById(R.id.bilgitarih);
         final TextView bilgivaryok = bilgiList.findViewById(R.id.bilgivaryok);
         uyeYoklama uye = bilgiyoklama.get(position);
-        bilgiadsoyad.setText(uye.getAd()+" "+uye.getSoyad());
+        bilgiadsoyad.setText(uye.getAd()+" "+uye.getSoyad()+" ");
         bilgitarih.setText(uye.getTarih());
         if (uye.getYoklama().equals("1")){
             bilgivaryok.setText("VAR");

@@ -30,9 +30,11 @@
         <activity android:name=".yeni_uye" android:screenOrientation="userPortrait"/>
         <activity android:name=".UyeBilgisi" android:screenOrientation="userPortrait"/>
         <activity android:name=".OgrenciList" android:screenOrientation="userPortrait"/>
+        <activity android:name=".GuncelleLİst" android:screenOrientation="userPortrait"/>
         <activity android:name=".yoklama" android:screenOrientation="userPortrait" />
         <activity android:name=".ucret" android:screenOrientation="userPortrait" />
         <activity android:name=".UyeSil" android:screenOrientation="userPortrait" />
+        <activity android:name=".uyeGuncelle" android:screenOrientation="userPortrait"/>
     </application>
 
 

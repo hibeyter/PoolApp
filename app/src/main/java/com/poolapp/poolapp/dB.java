@@ -17,6 +17,7 @@ public class dB extends SQLiteOpenHelper  {
     private static final  String user_NAME = "name";
     private static final  String user_SURNAME ="surname";
     private static final  String user_TC = "tc";
+    private static final  String user_DATE = "date";
     private static final  String user_SEX = "sex";
     private static final  String user_MOMJOB = "momjob";
     private static final  String user_DADJOB = "dadjob";
@@ -49,6 +50,7 @@ public class dB extends SQLiteOpenHelper  {
             ""+user_NAME+" TEXT NOT NULL," +
             ""+user_SURNAME+" TEXT NOT NULL," +
             ""+user_TC+" TEXT NOT NULL," +
+            ""+user_DATE+" TEXT NOT NULL," +
             ""+user_SEX+" TEXT NOT NULL," +
             ""+user_MOMJOB+" TEXT," +
             ""+user_DADJOB+" TEXT," +
@@ -98,6 +100,7 @@ public class dB extends SQLiteOpenHelper  {
         values.put(user_NAME, user.getNAME());
         values.put(user_SURNAME, user.getSURNAME());
         values.put(user_TC, user.getTC());
+        values.put(user_DATE, user.getDATE());
         values.put(user_SEX, user.getSEX());
         values.put(user_MOMJOB, user.getMOMJOB());
         values.put(user_DADJOB, user.getDADJOB());

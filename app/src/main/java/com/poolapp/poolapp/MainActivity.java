@@ -25,11 +25,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.menu_layout);
         fragment5.database = openOrCreateDatabase("PoolApp",MODE_PRIVATE,null);
         fragment5.database.execSQL("CREATE TABLE IF NOT EXISTS users(img BLOB, ad VARCHAR, soyad VARCHAR," +
-                "tc VARCHAR, cinsiyet VARCHAR, ameslek VARCHAR, bmeslek VARCHAR, okul VARCHAR, sinif VARCHAR, " +
+                "tc VARCHAR,date VARCHAR ,cinsiyet VARCHAR, ameslek VARCHAR, bmeslek VARCHAR, okul VARCHAR, sinif VARCHAR, " +
                 "tel VARCHAR, mail VARCHAR, adres VARCHAR, yakintel VARCHAR, evtel VARCHAR, isadresi VARCHAR," +
                 "kangrb VARCHAR, saglik VARCHAR, ameliyat VARCHAR, ilac VARCHAR, boy VARCHAR, kilo VARCHAR, " +
                 "koluzunlugu VARCHAR, bacak VARCHAR, omuz VARCHAR, gun VARCHAR, saat VARCHAR, yuzme VARCHAR, " +
                 "antrenor VARCHAR, lisansno VARCHAR, yarismalar VARCHAR)");
+        fragment5.database.execSQL("CREATE TABLE IF NOT EXISTS yoklama(tc VARCHAR, name VARCHAR, surname VARCHAR, gun VARCHAR, saat VARCHAR, tarih VARCHAR, varyok VARCHAR)");
         Button btn_yeni_uye =  findViewById(R.id.btn_yeni_uye);
         btn_yeni_uye.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
 
         Button btn_yoklama =  findViewById(R.id.btn_yoklama);
         btn_yoklama.setOnClickListener(new View.OnClickListener() {
@@ -70,6 +70,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,UyeSil.class);
+                startActivity(intent);
+            }
+        });
+        Button btn_guncelle = findViewById(R.id.btn_uye_guncelle);
+        btn_guncelle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,GuncelleLİst.class);
                 startActivity(intent);
             }
         });

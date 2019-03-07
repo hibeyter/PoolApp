@@ -37,6 +37,7 @@ public class fragment5 extends Fragment {
     static EditText yarislar_edit;
     static EditText antrenor_edit;
     Button kaydet_btn;
+    String name = "";
     //
 
 
@@ -53,6 +54,10 @@ public class fragment5 extends Fragment {
         kaydet_btn.setOnClickListener(new kayit());
         return view;
     }
+    public void cek(){
+        if(fragment1.ad_edit.getText().toString() != null)
+        name = fragment1.ad_edit.getText().toString();
+    }
 
     class kayit implements View.OnClickListener{
 
@@ -61,7 +66,7 @@ public class fragment5 extends Fragment {
             try{
                 database = getActivity().openOrCreateDatabase("PoolApp",Context.MODE_PRIVATE,null);
                 database.execSQL("CREATE TABLE IF NOT EXISTS users(img BLOB, ad VARCHAR, soyad VARCHAR," +
-                        "tc VARCHAR, cinsiyet VARCHAR, ameslek VARCHAR, bmeslek VARCHAR, okul VARCHAR, sinif VARCHAR, " +
+                        "tc VARCHAR,date VARCHAR ,cinsiyet VARCHAR, ameslek VARCHAR, bmeslek VARCHAR, okul VARCHAR, sinif VARCHAR, " +
                         "tel VARCHAR, mail VARCHAR, adres VARCHAR, yakintel VARCHAR, evtel VARCHAR, isadresi VARCHAR," +
                         "kangrb VARCHAR, saglik VARCHAR, ameliyat VARCHAR, ilac VARCHAR, boy VARCHAR, kilo VARCHAR, " +
                         "koluzunlugu VARCHAR, bacak VARCHAR, omuz VARCHAR, gun VARCHAR, saat VARCHAR, yuzme VARCHAR, " +
@@ -72,7 +77,7 @@ public class fragment5 extends Fragment {
                 bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos);
                 byte[] img = baos.toByteArray();
                 users us = new users(img,fragment1.ad_edit.getText().toString(),fragment1.soyad_edit.getText().toString(),
-                        fragment1.tc_edit.getText().toString(),fragment6.cinsiyet.getSelectedItem().toString(),
+                        fragment1.tc_edit.getText().toString(),fragment1.txtDate.getText().toString(),fragment6.cinsiyet.getSelectedItem().toString(),
                         fragment6.annemeslek_edit.getText().toString(),fragment6.babameslek_edit.getText().toString(),
                         fragment6.okul_edit.getText().toString(),fragment6.sinif_edit.getText().toString(),
                         fragment2.telno_edit.getText().toString(),fragment2.mail_edit.getText().toString(),
@@ -85,41 +90,42 @@ public class fragment5 extends Fragment {
                         fragment4.omuz_edit.getText().toString(),yuzme_edit.getText().toString(),gunler.getSelectedItem().toString(),
                         saatler.getSelectedItem().toString(),antrenor_edit.getText().toString(),lisansno_edit.getText().toString(),
                         yarislar_edit.getText().toString());
-                        String query = "Insert Into users (img, ad, soyad, tc, cinsiyet, ameslek, bmeslek, okul, sinif, tel," +
+                        String query = "Insert Into users (img, ad, soyad, tc, date, cinsiyet, ameslek, bmeslek, okul, sinif, tel," +
                         "mail, adres, yakintel, evtel, isadresi, kangrb, saglik, ameliyat, ilac, boy, kilo, koluzunlugu," +
-                        "bacak, omuz, gun, saat, yuzme, antrenor, lisansno, yarismalar) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?," +
+                        "bacak, omuz, gun, saat, yuzme, antrenor, lisansno, yarismalar) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?," +
                         "?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
                 SQLiteStatement statement = database.compileStatement(query);
                 statement.bindBlob(1,us.getIMAGE());
                 statement.bindString(2,us.getNAME());
                 statement.bindString(3,us.getSURNAME());
                 statement.bindString(4,us.getTC());
-                statement.bindString(5,us.getSEX());
-                statement.bindString(6,us.getMOMJOB());
-                statement.bindString(7,us.getDADJOB());
-                statement.bindString(8,us.getSCHOOL());
-                statement.bindString(9,us.getCLASS());
-                statement.bindString(10,us.getTEL());
-                statement.bindString(11,us.getMAIL());
-                statement.bindString(12,us.getADRESS());
-                statement.bindString(13,us.getYAKINTEL());
-                statement.bindString(14,us.getHOMETEL());
-                statement.bindString(15,us.getJOBADRESS());
-                statement.bindString(16,us.getBLOODTYPE());
-                statement.bindString(17,us.getHEALTHPROBLEM());
-                statement.bindString(18,us.getSURGERY());
-                statement.bindString(19,us.getDRUG());
-                statement.bindString(20,us.getLENGTH());
-                statement.bindString(21,us.getWEIGHT());
-                statement.bindString(22,us.getARM());
-                statement.bindString(23,us.getLEG());
-                statement.bindString(24,us.getSHOULDER());
-                statement.bindString(25,us.getDAY());
-                statement.bindString(26,us.getHOUR());
-                statement.bindString(27,us.getSWIMINF());
-                statement.bindString(28,us.getANTRENOR());
-                statement.bindString(29,us.getLICENCE());
-                statement.bindString(30,us.getRACINGS());
+                statement.bindString(5,us.getDATE());
+                statement.bindString(6,us.getSEX());
+                statement.bindString(7,us.getMOMJOB());
+                statement.bindString(8,us.getDADJOB());
+                statement.bindString(9,us.getSCHOOL());
+                statement.bindString(10,us.getCLASS());
+                statement.bindString(11,us.getTEL());
+                statement.bindString(12,us.getMAIL());
+                statement.bindString(13,us.getADRESS());
+                statement.bindString(14,us.getYAKINTEL());
+                statement.bindString(15,us.getHOMETEL());
+                statement.bindString(16,us.getJOBADRESS());
+                statement.bindString(17,us.getBLOODTYPE());
+                statement.bindString(18,us.getHEALTHPROBLEM());
+                statement.bindString(19,us.getSURGERY());
+                statement.bindString(20,us.getDRUG());
+                statement.bindString(21,us.getLENGTH());
+                statement.bindString(22,us.getWEIGHT());
+                statement.bindString(23,us.getARM());
+                statement.bindString(24,us.getLEG());
+                statement.bindString(25,us.getSHOULDER());
+                statement.bindString(26,us.getDAY());
+                statement.bindString(27,us.getHOUR());
+                statement.bindString(28,us.getSWIMINF());
+                statement.bindString(29,us.getANTRENOR());
+                statement.bindString(30,us.getLICENCE());
+                statement.bindString(31,us.getRACINGS());
                 statement.execute();
                 AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
                 builder.setTitle(us.getNAME()+" "+us.getSURNAME()+" Başarılı Şekilde Kayıt Edildi!");
@@ -143,7 +149,7 @@ public class fragment5 extends Fragment {
                 byte[] img = baos.toByteArray();
                // db.onUpgrade(db.getWritableDatabase(), 1, 2);
                 db.addUser(new users(img,fragment1.ad_edit.getText().toString(),fragment1.soyad_edit.getText().toString(),
-                        fragment1.tc_edit.getText().toString(),fragment6.cinsiyet.getSelectedItem().toString(),
+                        fragment1.tc_edit.getText().toString(),fragment6.cinsiyet.getSelectedItem().toString(),fragment1.txtDate.getText().toString(),
                         fragment6.annemeslek_edit.getText().toString(),fragment6.babameslek_edit.getText().toString(),
                         fragment6.okul_edit.getText().toString(),fragment6.sinif_edit.getText().toString(),
                         fragment2.telno_edit.getText().toString(),fragment2.mail_edit.getText().toString(),

@@ -8,6 +8,7 @@ public class users {
     String NAME;
     String SURNAME;
     String TC;
+    String DATE;
     String SEX;
     String MOMJOB;
     String DADJOB;
@@ -37,11 +38,12 @@ public class users {
 
     //public users(){}
 
-    public users(byte[] IMAGE, String NAME, String SURNAME, String TC, String SEX, String MOMJOB, String DADJOB, String SCHOOL, String CLASS, String TEL, String MAIL, String ADRESS, String YAKINTEL, String HOMETEL, String JOBADRESS, String BLOODTYPE, String HEALTHPROBLEM, String SURGERY, String DRUG, String LENGTH, String WEIGHT, String ARM, String LEG, String SHOULDER, String SWIMINF, String DAY, String HOUR, String ANTRENOR, String LICENCE, String RACINGS) {
+    public users(byte[] IMAGE, String NAME, String SURNAME, String TC,String DATE, String SEX, String MOMJOB, String DADJOB, String SCHOOL, String CLASS, String TEL, String MAIL, String ADRESS, String YAKINTEL, String HOMETEL, String JOBADRESS, String BLOODTYPE, String HEALTHPROBLEM, String SURGERY, String DRUG, String LENGTH, String WEIGHT, String ARM, String LEG, String SHOULDER, String SWIMINF, String DAY, String HOUR, String ANTRENOR, String LICENCE, String RACINGS) {
         this.IMAGE = IMAGE;
         this.NAME = NAME;
         this.SURNAME = SURNAME;
         this.TC = TC;
+        this.DATE = DATE;
         this.SEX = SEX;
         this.MOMJOB = MOMJOB;
         this.DADJOB = DADJOB;
@@ -70,7 +72,7 @@ public class users {
         this.RACINGS = RACINGS;
     }
 
-    public users(String NAME, String SURNAME, String TC, String SEX, String MOMJOB, String DADJOB, String SCHOOL, String CLASS,
+    public users(String NAME, String SURNAME, String TC,String DATE, String SEX, String MOMJOB, String DADJOB, String SCHOOL, String CLASS,
                  String TEL, String MAIL, String ADRESS, String YAKINTEL, String HOMETEL, String JOBADRESS,
                  String BLOODTYPE, String HEALTHPROBLEM, String SURGERY, String DRUG, String LENGTH, String WEIGHT,
                  String ARM, String LEG, String SHOULDER, String SWIMINF, String DAY, String HOUR, String ANTRENOR, String LICENCE,
@@ -78,6 +80,7 @@ public class users {
         this.NAME = NAME;
         this.SURNAME = SURNAME;
         this.TC = TC;
+        this.DATE = DATE;
         this.SEX = SEX;
         this.MOMJOB = MOMJOB;
         this.DADJOB = DADJOB;
@@ -345,6 +348,14 @@ public class users {
     public void setRACINGS(String RACINGS) {
         this.RACINGS = RACINGS;
     }
+    public String getDATE() {
+        return DATE;
+    }
+
+    public void setDATE(String DATE) {
+        this.DATE = DATE;
+    }
+
 
 
 

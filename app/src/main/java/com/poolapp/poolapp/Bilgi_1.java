@@ -84,9 +84,11 @@ public class Bilgi_1 extends Fragment {
         bilgi_antrenor = getActivity().findViewById(R.id.bilgi_antrenor);
         bilgi_lisansno = getActivity().findViewById(R.id.bilgi_lisansno);
         bilgi_yaris = getActivity().findViewById(R.id.bilgi_yarislar);
+
         bilgi_ad.setText(UyeBilgisi.u.getNAME());
         bilgi_soyad.setText(UyeBilgisi.u.getSURNAME());
         bilgi_tc.setText(UyeBilgisi.u.getTC());
+        bilgi_tarih.setText(UyeBilgisi.u.getDATE());
         bilgi_cinsiyet.setText(UyeBilgisi.u.getSEX());
         bilgi_annemeslek.setText(UyeBilgisi.u.getMOMJOB());
         bilgi_babameslek.setText(UyeBilgisi.u.getDADJOB());

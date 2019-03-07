@@ -50,6 +50,7 @@ public class UyeSil extends AppCompatActivity {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
                                     int x = fragment5.database.delete("users", "tc = ?",new String[]{listVeri.get(position).getTc()});
+                                    int y = fragment5.database.delete("yoklama", "tc = ?",new String[]{listVeri.get(position).getTc()});
                                     dialog.cancel();
                                     finish();
                                     startActivity(getIntent());

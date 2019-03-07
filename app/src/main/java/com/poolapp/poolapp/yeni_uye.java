@@ -22,6 +22,5 @@ public class yeni_uye extends AppCompatActivity {
         viewPager.setAdapter(new Fragments(getSupportFragmentManager(),context));
         tabLayout.setupWithViewPager(viewPager);
 
-
     }
 }

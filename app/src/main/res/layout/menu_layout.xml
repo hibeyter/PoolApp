@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_color">
@@ -12,7 +11,7 @@
         android:layout_height="200dp"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
-        android:src="@mipmap/ic_launcher"/>
+        android:src="@drawable/d0bc5683_c48f_40f9_bab0_73f693e03034"/>
 
     <Button
         android:id="@+id/btn_yeni_uye"

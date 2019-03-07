@@ -128,6 +128,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tc_edit" />
 
+    <TextView
+        android:id="@+id/date_txt"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/button_color"
+        android:textSize="24sp"
+        android:layout_marginStart="250dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_datepicker"/>
+
 
 
 </android.support.constraint.ConstraintLayout>
