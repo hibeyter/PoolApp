@@ -32,8 +32,9 @@
         android:prompt="@string/SaatSec"
         android:spinnerMode="dialog"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ogrenci" />
+        app:layout_constraintTop_toBottomOf="@+id/gun" />
 
     <Spinner
         android:id="@+id/ogrenci"
@@ -45,8 +46,9 @@
         android:prompt="@string/ogrenciler"
         android:spinnerMode="dialog"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gun">
+        app:layout_constraintTop_toBottomOf="@+id/saat">
 
     </Spinner>
 
@@ -58,7 +60,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="50dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/saat"
+        app:layout_constraintTop_toBottomOf="@+id/ogrenci"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
@@ -67,11 +69,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="110dp"
         android:textColor="@color/toolbar_color"
         android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/foto"
-        app:layout_constraintTop_toBottomOf="@+id/saat" />
+        app:layout_constraintTop_toBottomOf="@+id/ogrenci" />
 
     <TextView
         android:id="@+id/textViewUcret"
