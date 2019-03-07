@@ -1,6 +1,7 @@
 package com.poolapp.poolapp;
 
 import android.app.DatePickerDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -10,14 +11,18 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
+import android.text.Editable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import java.util.Calendar;
 
 public class fragment1 extends Fragment {
@@ -31,7 +36,6 @@ public class fragment1 extends Fragment {
     static EditText ad_edit;
     static EditText soyad_edit;
     static EditText tc_edit;
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -40,6 +44,8 @@ public class fragment1 extends Fragment {
         soyad_edit = myView.findViewById(R.id.soyad_edit);
         tc_edit = myView.findViewById(R.id.tc_edit);
         btndate = myView.findViewById(R.id.btn_datepicker);
+        Tccikma();
+
       //  txtDate = myView.findViewById(R.id.date_txt);
         btndate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -94,6 +100,23 @@ public class fragment1 extends Fragment {
             Bitmap bitmap = (Bitmap) bundle.get("data");
             imageView.setImageBitmap(bitmap);
         }
+    }
+    public void Tccikma(){
+        final Kontrol kontrol = new Kontrol();
+        tc_edit.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (!hasFocus) {
+                    String x = String.valueOf(tc_edit.getText());
+                    if (!kontrol.TcKontrol(x)){
+                        tc_edit.setError("Hatalı Tc");
+
+                    }
+                }else{
+
+                }
+            }
+        });
     }
 }
 
