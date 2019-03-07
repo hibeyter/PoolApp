@@ -44,13 +44,10 @@ public class fragment1 extends Fragment {
         soyad_edit = myView.findViewById(R.id.soyad_edit);
         tc_edit = myView.findViewById(R.id.tc_edit);
         btndate = myView.findViewById(R.id.btn_datepicker);
-<<<<<<< HEAD
         txtDate = myView.findViewById(R.id.date_txt);
-=======
         Tccikma();
 
       //  txtDate = myView.findViewById(R.id.date_txt);
->>>>>>> a14f5895633d22071ce9c4da2c955c7a2ce48a8b
         btndate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

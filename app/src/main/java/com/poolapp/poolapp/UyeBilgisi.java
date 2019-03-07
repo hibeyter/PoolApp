@@ -7,6 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.ListView;
 import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,22 +16,21 @@ public class UyeBilgisi extends AppCompatActivity {
     TabLayout tabLayout_bilgi;
     ViewPager viewPager_bilgi;
     Context context = this;
+    String tc;
+    static List<ayVeucret> listucret = new ArrayList<>();
     public static users u;
     public static List<uyeYoklama> uye;
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.uye_bilgisi);
-        final String tc = getIntent().getExtras().getString("tc");
+        tc = getIntent().getExtras().getString("tc");
         tabLayout_bilgi = findViewById(R.id.tablayout_bilgi);
         viewPager_bilgi = findViewById(R.id.View_pager_bilgi);
         viewPager_bilgi.setAdapter(new Fragments_Bilgi(getSupportFragmentManager(),context));
         tabLayout_bilgi.setupWithViewPager(viewPager_bilgi);
-        Toast.makeText(context,tc,Toast.LENGTH_LONG).show();
-
+        listgoster();
         fragment5.database = this.openOrCreateDatabase("PoolApp",MODE_PRIVATE,null);
-        Cursor cursor = fragment5.database.rawQuery("Select ad, soyad,date ,tc,cinsiyet,ameslek,bmeslek, okul, sinif, tel,\" +\n" +
-                "\"mail, adres, yakintel, evtel, isadresi, kangrb, saglik, ameliyat, ilac, boy, kilo, koluzunlugu,\" +\n" +
-                "\"bacak, omuz, gun, saat, yuzme, antrenor, lisansno, yarismalar from users where tc = ?",new String[]{tc});
+        Cursor cursor = fragment5.database.rawQuery("Select ad, soyad,date ,tc,cinsiyet,ameslek,bmeslek,okul, sinif, tel, mail, adres, yakintel, evtel, isadresi, kangrb, saglik, ameliyat, ilac, boy, kilo, koluzunlugu,bacak, omuz, gun, saat, yuzme, antrenor, lisansno, yarismalar from users where tc = ?",new String[]{tc});
         int ixad = cursor.getColumnIndex("ad");
         int ixsoyad = cursor.getColumnIndex("soyad");
         int ixtc = cursor.getColumnIndex("tc");
@@ -105,6 +105,27 @@ public class UyeBilgisi extends AppCompatActivity {
             cs.close();
 
 
+        }
+
+    }
+    public void listgoster()
+    {
+        try{
+            fragment5.database = this.openOrCreateDatabase("PoolApp", MODE_PRIVATE, null);
+            Cursor cursor = fragment5.database.rawQuery("Select tarih, miktar from ucret where tc = ?",new String[]{tc});
+            int ixtarih = cursor.getColumnIndex("tarih");
+            int ixmiktar = cursor.getColumnIndex("miktar");
+            cursor.moveToFirst();
+            while (cursor != null)
+            {
+                ayVeucret yeni = new ayVeucret(cursor.getString(ixtarih),cursor.getString(ixmiktar));
+                listucret.add(yeni);
+                cursor.moveToNext();
+                System.out.println("1");
+            }
+        }
+        catch (Exception e){
+            e.printStackTrace();
         }
     }
 

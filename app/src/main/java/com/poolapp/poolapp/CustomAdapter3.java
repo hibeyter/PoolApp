@@ -21,7 +21,7 @@ public class CustomAdapter3 extends BaseAdapter {
     }
     @Override
     public int getCount() {
-        return 0;
+        return bilgiyoklama.size();
     }
 
     @Override

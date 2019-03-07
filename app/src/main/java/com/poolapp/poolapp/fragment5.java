@@ -87,8 +87,8 @@ public class fragment5 extends Fragment {
                         fragment3.ameliyat_edit.getText().toString(),fragment3.ilac_edit.getText().toString(),
                         fragment4.boy_edit.getText().toString(),fragment4.kilo_edit.getText().toString(),
                         fragment4.kolboyu_edit.getText().toString(),fragment4.bacak_edit.getText().toString(),
-                        fragment4.omuz_edit.getText().toString(),yuzme_edit.getText().toString(),gunler.getSelectedItem().toString(),
-                        saatler.getSelectedItem().toString(),antrenor_edit.getText().toString(),lisansno_edit.getText().toString(),
+                        fragment4.omuz_edit.getText().toString(),gunler.getSelectedItem().toString(),
+                        saatler.getSelectedItem().toString(),yuzme_edit.getText().toString(),antrenor_edit.getText().toString(),lisansno_edit.getText().toString(),
                         yarislar_edit.getText().toString());
                         String query = "Insert Into users (img, ad, soyad, tc, date, cinsiyet, ameslek, bmeslek, okul, sinif, tel," +
                         "mail, adres, yakintel, evtel, isadresi, kangrb, saglik, ameliyat, ilac, boy, kilo, koluzunlugu," +
