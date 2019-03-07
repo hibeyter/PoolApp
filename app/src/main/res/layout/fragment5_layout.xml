@@ -92,7 +92,7 @@
 
     <Button
         android:id="@+id/kaydet_btn"
-        android:layout_width="150dp"
+        android:layout_width="175dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="224dp"
         android:layout_marginLeft="224dp"

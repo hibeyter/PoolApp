@@ -18,7 +18,6 @@ import static android.database.sqlite.SQLiteDatabase.openOrCreateDatabase;
 
 public class Bilgi_3 extends Fragment {
     ListView ls;
-    List<ayVeucret> listucret = new ArrayList<>();
     cusadapucret adapter;
 
     @Nullable

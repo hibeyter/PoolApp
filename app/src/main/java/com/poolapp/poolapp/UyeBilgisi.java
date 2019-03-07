@@ -17,11 +17,12 @@ public class UyeBilgisi extends AppCompatActivity {
     ViewPager viewPager_bilgi;
     Context context = this;
     String tc;
-    static List<ayVeucret> listucret = new ArrayList<>();
+    static List<ayVeucret> listucret;
     public static users u;
     public static List<uyeYoklama> uye;
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        listucret = new ArrayList<>();
         setContentView(R.layout.uye_bilgisi);
         tc = getIntent().getExtras().getString("tc");
         tabLayout_bilgi = findViewById(R.id.tablayout_bilgi);
