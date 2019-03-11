@@ -40,4 +40,21 @@ public class guncelle_1 extends Fragment {
         guncel_tc.setText(uyeGuncelle.us.getTC());
         guncel_tarih.setText(uyeGuncelle.us.getDATE());
     }
+    public void Tccikma(){
+        final Kontrol kontrol = new Kontrol();
+        guncel_tc.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (!hasFocus) {
+                    String x = String.valueOf(guncel_tc.getText());
+                    if (!kontrol.TcKontrol(x)){
+                        guncel_tc.setError("Hatalı Tc");
+
+                    }
+                }else{
+
+                }
+            }
+        });
+    }
 }

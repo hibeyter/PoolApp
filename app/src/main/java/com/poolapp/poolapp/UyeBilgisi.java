@@ -23,6 +23,7 @@ public class UyeBilgisi extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         listucret = new ArrayList<>();
+        uye = new ArrayList<>();
         setContentView(R.layout.uye_bilgisi);
         tc = getIntent().getExtras().getString("tc");
         tabLayout_bilgi = findViewById(R.id.tablayout_bilgi);
@@ -91,7 +92,6 @@ public class UyeBilgisi extends AppCompatActivity {
                 try{
                     cs.moveToFirst();
                     for (int j=0;j<cs.getCount();j++){
-                        uye = new ArrayList<>();
                         uye.add(new uyeYoklama(cs.getString(ixad2),
                                 cs.getString(ixsoyad2),
                                 cs.getString(ixtarih),

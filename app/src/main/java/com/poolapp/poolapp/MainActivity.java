@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 "koluzunlugu VARCHAR, bacak VARCHAR, omuz VARCHAR, gun VARCHAR, saat VARCHAR, yuzme VARCHAR, " +
                 "antrenor VARCHAR, lisansno VARCHAR, yarismalar VARCHAR)");
         fragment5.database.execSQL("CREATE TABLE IF NOT EXISTS yoklama(tc VARCHAR, name VARCHAR, surname VARCHAR, gun VARCHAR, saat VARCHAR, tarih VARCHAR, varyok VARCHAR)");
+        fragment5.database.execSQL("CREATE TABLE IF NOT EXISTS ucret(ad VARCHAR, soyad VARCHAR, tc VARCHAR, tarih VARCHAR, miktar VARCHAR)");
         Button btn_yeni_uye =  findViewById(R.id.btn_yeni_uye);
         btn_yeni_uye.setOnClickListener(new View.OnClickListener() {
             @Override

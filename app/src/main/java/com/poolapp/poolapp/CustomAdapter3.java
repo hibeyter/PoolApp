@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CustomAdapter3 extends BaseAdapter {
-    List<uyeYoklama> bilgiyoklama = new ArrayList<>();
+    List<uyeYoklama> bilgiyoklama;
     LayoutInflater inflater;
     Context context;
 

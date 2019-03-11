@@ -38,7 +38,7 @@ public class users {
 
     //public users(){}
 
-    public users(byte[] IMAGE, String NAME, String SURNAME, String TC,String DATE, String SEX, String MOMJOB, String DADJOB, String SCHOOL, String CLASS, String TEL, String MAIL, String ADRESS, String YAKINTEL, String HOMETEL, String JOBADRESS, String BLOODTYPE, String HEALTHPROBLEM, String SURGERY, String DRUG, String LENGTH, String WEIGHT, String ARM, String LEG, String SHOULDER, String SWIMINF, String DAY, String HOUR, String ANTRENOR, String LICENCE, String RACINGS) {
+    public users(byte[] IMAGE, String NAME, String SURNAME, String TC,String DATE, String SEX, String MOMJOB, String DADJOB, String SCHOOL, String CLASS, String TEL, String MAIL, String ADRESS, String YAKINTEL, String HOMETEL, String JOBADRESS, String BLOODTYPE, String HEALTHPROBLEM, String SURGERY, String DRUG, String LENGTH, String WEIGHT, String ARM, String LEG, String SHOULDER, String DAY, String HOUR, String SWIMINF, String ANTRENOR, String LICENCE, String RACINGS) {
         this.IMAGE = IMAGE;
         this.NAME = NAME;
         this.SURNAME = SURNAME;
