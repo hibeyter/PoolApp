@@ -24,8 +24,8 @@
 
                 <ImageView
                     android:id="@+id/bilgi_img"
-                    android:layout_width="180dp"
-                    android:layout_height="180dp"
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
                     android:layout_row="0"
                     android:layout_column="0"
                     android:layout_gravity="center_horizontal"
@@ -38,8 +38,8 @@
                     android:layout_column="0"
                     android:layout_gravity="center_horizontal"
                     android:text="Ad : "
-                    android:textColor="@color/toolbar_color"
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_ad"
@@ -47,6 +47,7 @@
                     android:layout_height="wrap_content"
                     android:layout_row="1"
                     android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
                     android:text="null"
                     android:textSize="30sp"
                     android:textColor="@color/toolbar_color"/>
@@ -57,10 +58,10 @@
                     android:layout_height="wrap_content"
                     android:layout_row="2"
                     android:layout_column="0"
-                    android:layout_gravity="center"
+                    android:layout_gravity="center_horizontal"
                     android:text="Soyad : "
-                    android:textColor="@color/toolbar_color"
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_soyad"
@@ -68,6 +69,7 @@
                     android:layout_height="wrap_content"
                     android:layout_row="2"
                     android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
                     android:text="null"
                     android:textSize="30sp"
                     android:textColor="@color/toolbar_color"/>
@@ -79,8 +81,8 @@
                     android:layout_column="0"
                     android:layout_gravity="center_horizontal"
                     android:text="Tc : "
-                    android:textColor="@color/toolbar_color"
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_tc"
@@ -88,6 +90,7 @@
                     android:layout_height="wrap_content"
                     android:layout_row="3"
                     android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
                     android:text="null"
                     android:textSize="30sp"
                     android:textColor="@color/toolbar_color"/>
@@ -99,8 +102,8 @@
                     android:layout_column="0"
                     android:layout_gravity="center_horizontal"
                     android:text="Tarih : "
-                    android:textColor="@color/toolbar_color"
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_tarih"
@@ -108,6 +111,7 @@
                     android:layout_height="wrap_content"
                     android:layout_row="4"
                     android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
                     android:text="null"
                     android:textSize="30sp"
                     android:textColor="@color/toolbar_color"/>
@@ -119,8 +123,8 @@
                     android:layout_column="0"
                     android:layout_gravity="center_horizontal"
                     android:text="Cinsiyet : "
-                    android:textColor="@color/toolbar_color"
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_cinsiyet"
@@ -128,6 +132,7 @@
                     android:layout_height="wrap_content"
                     android:layout_row="5"
                     android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
                     android:text="null"
                     android:textSize="30sp"
                     android:textColor="@color/toolbar_color"/>
@@ -139,8 +144,8 @@
                     android:layout_column="0"
                     android:layout_gravity="center_horizontal"
                     android:text="Anne Meslek : "
-                    android:textColor="@color/toolbar_color"
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_annemeslek"
@@ -148,6 +153,7 @@
                     android:layout_height="wrap_content"
                     android:layout_row="6"
                     android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
                     android:text="null"
                     android:textSize="30sp"
                     android:textColor="@color/toolbar_color"/>
@@ -159,8 +165,8 @@
                     android:layout_column="0"
                     android:layout_gravity="center_horizontal"
                     android:text="Baba Meslek : "
-                    android:textColor="@color/toolbar_color"
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_babameslek"
@@ -168,6 +174,7 @@
                     android:layout_height="wrap_content"
                     android:layout_row="7"
                     android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
                     android:text="null"
                     android:textSize="30sp"
                     android:textColor="@color/toolbar_color"/>
@@ -179,8 +186,8 @@
                     android:layout_column="0"
                     android:layout_gravity="center_horizontal"
                     android:text="Okul : "
-                    android:textColor="@color/toolbar_color"
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_okul"
@@ -188,6 +195,7 @@
                     android:layout_height="wrap_content"
                     android:layout_row="8"
                     android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
                     android:text="null"
                     android:textSize="30sp"
                     android:textColor="@color/toolbar_color"/>
@@ -208,6 +216,7 @@
                     android:layout_height="wrap_content"
                     android:layout_row="9"
                     android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
                     android:text="null"
                     android:textColor="@color/toolbar_color"
                     android:textSize="30sp" />
@@ -228,6 +237,7 @@
                     android:layout_height="wrap_content"
                     android:layout_row="10"
                     android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
                     android:text="null"
                     android:textSize="30sp"
                     android:textColor="@color/toolbar_color"/>
@@ -248,6 +258,7 @@
                     android:layout_height="wrap_content"
                     android:layout_row="11"
                     android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
                     android:text="null"
                     android:textSize="30sp"
                     android:textColor="@color/toolbar_color"/>
@@ -259,8 +270,8 @@
                     android:layout_column="0"
                     android:layout_gravity="center_horizontal"
                     android:text="Ev Adresi : "
-                    android:textColor="@color/toolbar_color"
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    android:textColor="@color/toolbar_color"/>
 
                 <TextView
                     android:id="@+id/bilgi_adres"
@@ -268,6 +279,7 @@
                     android:layout_height="wrap_content"
                     android:layout_row="12"
                     android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
                     android:text="null"
                     android:textSize="30sp"
                     android:textColor="@color/toolbar_color"/>
@@ -288,6 +300,7 @@
                     android:layout_height="wrap_content"
                     android:layout_row="13"
                     android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
                     android:text="null"
                     android:textSize="30sp"
                     android:textColor="@color/toolbar_color"/>
@@ -308,6 +321,7 @@
                     android:layout_height="wrap_content"
                     android:layout_row="14"
                     android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
                     android:text="null"
                     android:textSize="30sp"
                     android:textColor="@color/toolbar_color"/>
@@ -328,6 +342,7 @@
                     android:layout_height="wrap_content"
                     android:layout_row="15"
                     android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
                     android:text="null"
                     android:textSize="30sp"
                     android:textColor="@color/toolbar_color"/>
@@ -348,6 +363,7 @@
                     android:layout_height="wrap_content"
                     android:layout_row="16"
                     android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
                     android:text="null"
                     android:textSize="30sp"
                     android:textColor="@color/toolbar_color"/>
@@ -368,6 +384,7 @@
                     android:layout_height="wrap_content"
                     android:layout_row="17"
                     android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
                     android:text="null"
                     android:textSize="30sp"
                     android:textColor="@color/toolbar_color"/>
@@ -388,6 +405,7 @@
                     android:layout_height="wrap_content"
                     android:layout_row="18"
                     android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
                     android:text="null"
                     android:textSize="30sp"
                     android:textColor="@color/toolbar_color"/>
@@ -408,6 +426,7 @@
                     android:layout_height="wrap_content"
                     android:layout_row="19"
                     android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
                     android:text="null"
                     android:textSize="30sp"
                     android:textColor="@color/toolbar_color"/>
@@ -428,6 +447,7 @@
                     android:layout_height="wrap_content"
                     android:layout_row="20"
                     android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
                     android:text="null"
                     android:textSize="30sp"
                     android:textColor="@color/toolbar_color"/>
@@ -448,6 +468,7 @@
                     android:layout_height="wrap_content"
                     android:layout_row="21"
                     android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
                     android:text="null"
                     android:textSize="30sp"
                     android:textColor="@color/toolbar_color"/>
@@ -468,6 +489,7 @@
                     android:layout_height="wrap_content"
                     android:layout_row="22"
                     android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
                     android:text="null"
                     android:textSize="30sp"
                     android:textColor="@color/toolbar_color"/>
@@ -488,6 +510,7 @@
                     android:layout_height="wrap_content"
                     android:layout_row="23"
                     android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
                     android:text="null"
                     android:textSize="30sp"
                     android:textColor="@color/toolbar_color"/>
@@ -509,6 +532,7 @@
                     android:layout_height="wrap_content"
                     android:layout_row="24"
                     android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
                     android:text="null"
                     android:textSize="30sp"
                     android:textColor="@color/toolbar_color"/>
@@ -529,6 +553,7 @@
                     android:layout_height="wrap_content"
                     android:layout_row="25"
                     android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
                     android:text="null"
                     android:textSize="30sp"
                     android:textColor="@color/toolbar_color"/>
@@ -550,6 +575,7 @@
                     android:layout_height="wrap_content"
                     android:layout_row="26"
                     android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
                     android:text="null"
                     android:textSize="30sp"
                     android:textColor="@color/toolbar_color"/>
@@ -571,6 +597,7 @@
                     android:layout_height="wrap_content"
                     android:layout_row="27"
                     android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
                     android:text="null"
                     android:textSize="30sp"
                     android:textColor="@color/toolbar_color"/>
@@ -592,6 +619,7 @@
                     android:layout_height="wrap_content"
                     android:layout_row="28"
                     android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
                     android:text="null"
                     android:textSize="30sp"
                     android:textColor="@color/toolbar_color"/>
@@ -613,6 +641,7 @@
                     android:layout_height="wrap_content"
                     android:layout_row="29"
                     android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
                     android:text="null"
                     android:textSize="30sp"
                     android:textColor="@color/toolbar_color"/>
@@ -633,6 +662,7 @@
                     android:layout_height="wrap_content"
                     android:layout_row="30"
                     android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
                     android:text="null"
                     android:textSize="30sp"
                     android:textColor="@color/toolbar_color"/>

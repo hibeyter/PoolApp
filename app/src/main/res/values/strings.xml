@@ -40,7 +40,7 @@
     <string name="veli_tel_no">Veli Tel. No. :</string>
     <string name="veli_is_adres">İş Adresi :</string>
     <string name="kan_grubu">Kan Grubu :</string>
-    <string name="saglik_problemi">Sağlık Problemi(VARSA):</string>
+    <string name="saglik_problemi">Sağlık Problemi(VARSA) :</string>
     <string name="gecirdiği_ameliyat">Geçirdiği Ameliyatlar :</string>
     <string name="kullandigi_ilaclar">Kullandığı İlaçlar :</string>
     <string name="boy">Boy :</string>

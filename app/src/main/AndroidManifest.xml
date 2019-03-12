@@ -27,7 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".yeni_uye" android:screenOrientation="userPortrait"/>
+        <activity android:name=".yeni_uye" android:screenOrientation="fullSensor"/>
         <activity android:name=".UyeBilgisi" android:screenOrientation="userPortrait"/>
         <activity android:name=".OgrenciList" android:screenOrientation="userPortrait"/>
         <activity android:name=".GuncelleLİst" android:screenOrientation="userPortrait"/>

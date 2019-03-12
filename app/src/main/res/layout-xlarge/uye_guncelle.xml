@@ -5,28 +5,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar_main"
+        />
 
     <android.support.design.widget.TabLayout
-        android:id="@+id/tablayout_bilgi"
+        android:id="@+id/tablayout_guncelle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/toolbar_color"
-        app:tabMode="fixed"
         app:tabGravity="fill"
-        app:tabIndicatorColor="#000000"/>
-
-    <include
-        android:id="@+id/tool_bar_bilgi"
-        layout="@layout/toolbar_main"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:ignore="InvalidId" />
+        app:tabIndicatorColor="#000000"
+        app:tabMode="fixed" />
 
     <android.support.v4.view.ViewPager
-        android:id="@+id/View_pager_bilgi"
+        android:id="@+id/View_pager_guncelle"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:ignore="InvalidId" />
-
 
 </LinearLayout>
