@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.annotation.DrawableRes;
@@ -33,7 +34,7 @@ public class fragment1 extends Fragment {
     static EditText ad_edit;
     static EditText soyad_edit;
     static EditText tc_edit;
-    static Bitmap bmp = Bitmap.createBitmap(R.drawable.ic_launcher_foreground);
+    Bitmap bmp = null;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -43,8 +44,16 @@ public class fragment1 extends Fragment {
         tc_edit = myView.findViewById(R.id.tc_edit);
         btndate = myView.findViewById(R.id.btn_datepicker);
         txtDate = myView.findViewById(R.id.date_txt);
+        userImage = myView.findViewById(R.id.fotoEkle);
+        imageView = myView.findViewById(R.id.imageView);
+        userImage.setOnClickListener(new FotoButon());
         Tccikma();
-        imageView.setImageBitmap(bmp);
+        if (bmp != null) {
+            imageView.setImageBitmap(bmp);
+        }
+        else{
+            System.out.println("boş");
+        }
 
       //  txtDate = myView.findViewById(R.id.date_txt);
         btndate.setOnClickListener(new View.OnClickListener() {
@@ -74,9 +83,7 @@ public class fragment1 extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        userImage = getView().findViewById(R.id.fotoEkle);
-        imageView = getView().findViewById(R.id.imageView);
-       userImage.setOnClickListener(new FotoButon());
+
 
 
     }
@@ -93,7 +100,7 @@ public class fragment1 extends Fragment {
             if (requestCode == IMAGE_CAPTURE) {
                 Bundle bundle = data.getExtras();
                 Bitmap bitmap = (Bitmap) bundle.get("data");
-                bmp = (Bitmap) bundle.get("data");
+                bmp = bitmap;
                 imageView.setImageBitmap(bitmap);
             }
 
