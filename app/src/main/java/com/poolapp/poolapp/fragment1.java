@@ -1,28 +1,25 @@
 package com.poolapp.poolapp;
 
 import android.app.DatePickerDialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.support.annotation.DrawableRes;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AlertDialog;
-import android.text.Editable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import java.util.Calendar;
 
 public class fragment1 extends Fragment {
@@ -36,6 +33,7 @@ public class fragment1 extends Fragment {
     static EditText ad_edit;
     static EditText soyad_edit;
     static EditText tc_edit;
+    static Bitmap bmp = Bitmap.createBitmap(R.drawable.ic_launcher_foreground);
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -46,6 +44,7 @@ public class fragment1 extends Fragment {
         btndate = myView.findViewById(R.id.btn_datepicker);
         txtDate = myView.findViewById(R.id.date_txt);
         Tccikma();
+        imageView.setImageBitmap(bmp);
 
       //  txtDate = myView.findViewById(R.id.date_txt);
         btndate.setOnClickListener(new View.OnClickListener() {
@@ -71,37 +70,35 @@ public class fragment1 extends Fragment {
         });
         return myView;
     }
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         userImage = getView().findViewById(R.id.fotoEkle);
         imageView = getView().findViewById(R.id.imageView);
-        userImage.setOnClickListener(new FotoButon());
+       userImage.setOnClickListener(new FotoButon());
+
+
     }
-    class FotoButon implements View.OnClickListener {
+   class FotoButon implements View.OnClickListener {
         @Override
         public void onClick(View v) {
-            final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-            builder.setNeutralButton("Fotoğraf Çek", new DialogInterface.OnClickListener(){
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                  Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                    if(cameraIntent.resolveActivity(getActivity().getPackageManager()) != null)
-                        startActivityForResult(cameraIntent,IMAGE_CAPTURE);
+                Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                if (cameraIntent.resolveActivity(getActivity().getPackageManager()) != null) {
+                    startActivityForResult(cameraIntent, IMAGE_CAPTURE);
                 }
-            });
-      // Must call show() prior to fetching text view
-            AlertDialog alert = builder.create();
-            alert.show();
-        }
+         }
     }
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if(requestCode == IMAGE_CAPTURE)
-        { Bundle bundle = data.getExtras();
-            Bitmap bitmap = (Bitmap) bundle.get("data");
-            imageView.setImageBitmap(bitmap);
-        }
+            if (requestCode == IMAGE_CAPTURE) {
+                Bundle bundle = data.getExtras();
+                Bitmap bitmap = (Bitmap) bundle.get("data");
+                bmp = (Bitmap) bundle.get("data");
+                imageView.setImageBitmap(bitmap);
+            }
+
     }
+
     public void Tccikma(){
         final Kontrol kontrol = new Kontrol();
         tc_edit.setOnFocusChangeListener(new View.OnFocusChangeListener() {

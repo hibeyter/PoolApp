@@ -5,13 +5,13 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-feature android:name="android.hardware.Camera2"
-        android:required="true" />
+        android:required="true"/>
     <supports-screens android:resizeable="true"
     android:smallScreens="true"
     android:normalScreens="true"
     android:largeScreens="true"
     android:xlargeScreens="true"
-    android:anyDensity="true"/>
+    android:anyDensity="true" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -27,7 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".yeni_uye" android:screenOrientation="fullSensor"/>
+        <activity android:name=".yeni_uye" android:screenOrientation="userPortrait" />
         <activity android:name=".UyeBilgisi" android:screenOrientation="userPortrait"/>
         <activity android:name=".OgrenciList" android:screenOrientation="userPortrait"/>
         <activity android:name=".GuncelleLİst" android:screenOrientation="userPortrait"/>
