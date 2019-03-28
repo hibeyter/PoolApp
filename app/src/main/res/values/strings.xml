@@ -62,6 +62,8 @@
     <string name="sinif">Kaçıncı Sınıf :</string>
     <string name="text_merhaba">Merhaba, Hoşgeldiniz :)</string>
     <string name="ucret">Ücret :</string>
+    <string name="button">Button</string>
+    <string name="todo">TODO</string>
     <string-array name="gunler">
         <item>Pazartesi</item>
         <item>Salı</item>

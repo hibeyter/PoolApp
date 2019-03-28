@@ -11,6 +11,7 @@
         android:layout_height="240dp"
         android:layout_marginTop="100dp"
         android:adjustViewBounds="true"
+        android:onClick="ayaragit"
         android:scaleType="fitCenter"
         android:src="@drawable/d0bc5683_c48f_40f9_bab0_73f693e03034"
         app:layout_constraintEnd_toEndOf="parent"

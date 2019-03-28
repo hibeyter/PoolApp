@@ -83,6 +83,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    public  void ayaragit(View view){
+        Intent intent = new Intent(MainActivity.this,SendDbXls.class);
+        startActivity(intent);
+    }
     public  boolean kontrol(){
         int perCamera = ContextCompat.checkSelfPermission(this,Manifest.permission.CAMERA);
         List<String> izinler = new ArrayList<>();
