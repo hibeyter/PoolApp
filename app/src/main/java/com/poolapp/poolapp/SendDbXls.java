@@ -181,7 +181,7 @@ public class SendDbXls extends AppCompatActivity {
         Uri paket = Uri.fromFile(dosyakonumu);
         Intent emailIntent = new Intent(Intent.ACTION_SEND);
         emailIntent .setType("vnd.android.cursorusers.dir/email");
-        String to[] = {"hasta5634@gmail.com"};
+        String to[] = {"kaplanselinn@gmail.com"};
         emailIntent .putExtra(Intent.EXTRA_EMAIL, to);
         emailIntent .putExtra(Intent.EXTRA_STREAM, paket);
         emailIntent .putExtra(Intent.EXTRA_SUBJECT, "BİLGİ");

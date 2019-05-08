@@ -4,20 +4,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/design_color">
-
     <ImageView
         android:id="@+id/imageViewLogo"
         android:layout_width="fill_parent"
         android:layout_height="240dp"
+        android:clickable="true"
         android:layout_marginTop="100dp"
         android:adjustViewBounds="true"
-        android:onClick="ayaragit"
         android:scaleType="fitCenter"
         android:src="@drawable/d0bc5683_c48f_40f9_bab0_73f693e03034"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/btn_yeni_uye"
         android:layout_width="400dp"
@@ -107,5 +105,4 @@
         android:typeface="serif"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_ucret" />
-
 </android.support.constraint.ConstraintLayout>

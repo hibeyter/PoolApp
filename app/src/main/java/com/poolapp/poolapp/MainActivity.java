@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -82,11 +83,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        ImageView logo = findViewById(R.id.imageViewLogo);
+        logo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,SendDbXls.class);
+                startActivity(intent);
+            }
+        });
+
     }
-    public  void ayaragit(View view){
-        Intent intent = new Intent(MainActivity.this,SendDbXls.class);
-        startActivity(intent);
-    }
+
     public  boolean kontrol(){
         int perCamera = ContextCompat.checkSelfPermission(this,Manifest.permission.CAMERA);
         List<String> izinler = new ArrayList<>();
